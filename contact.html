@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>">
+    <title>hruday.</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="intro">hi, i am
+            <span class="name">
+                <a href="/">hruday</a>
+            </span>
+        </div>
+        <div class="nav-elements">
+            <a href="/projects.html" class="contact">projects</a>
+            <a href="/research.html" class="contact">research</a>
+            <a href="/articles.html" class="contact">articles</a>
+            <a href="/contact.html" class="contact">contact me</a>
+            <!-- <button id="darkModeToggle" class="dark-mode-toggle">🌞</button> -->
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="body">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Don't be a Stranger! 👋</h1>
+                <p class="subtitle">Let's create something awesome together.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send me a message 📨</h2>
+                    <form class="contact-form" action="https://formspree.io/f/meooorjw" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="subject" required>
+                                <option value="" disabled selected>Select Subject</option>
+                                <option value="collaboration">Project Collaboration</option>
+                                <option value="hire">Hire me</option>
+                                <option value="question">General Question</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h2>Quick Contact ⚡</h2>
+                        <p>Email: <a href="mailto:gurijalahruday@gmail.com">gurijalahruday@gmail.com</a></p>
+                        <p>I'll respond within 24 hours 🚀</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h2>Connect With Me 🌐</h2>
+                        <div class="social-links">
+                            <a href="https://github.com/HrudayGurijala" target="_blank" class="social-link">GitHub</a>
+                            <a href="https://www.linkedin.com/in/hruday-gurijala-61b472248/" target="_blank"
+                                class="social-link">LinkedIn</a>
+                            <a href="https://x.com/hrudaygg" target="_blank" class="social-link">Twitter</a>
+                            <a href="https://medium.com/@gurijalahruday" target="_blank" class="social-link">Medium</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h2>Support My Work</h2>
+                        <a href="https://buymeacoffee.com/gurijalahrk" target="_blank" class="support-btn">
+                            Buy me a Biryani 🍚
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <a href="https://github.com/HrudayGurijala" target="_blank">github</a> |
+        <a href="https://medium.com/@gurijalahruday" target="_blank">medium</a> |
+        <a href="https://www.linkedin.com/in/hruday-gurijala-61b472248/" target="_blank">linkedin</a> |
+        <a href="https://x.com/hrudaygg" target="_blank">twitter</a> |
+        <a href="https://buymeacoffee.com/gurijalahrk" target="_blank">biryani</a>
+    </div>
+    <footer>
+        &copy; 2024 Design and crafted by Hruday Gurijala
+    </footer>
+
+    <!-- <script>
+        // Your existing dark mode toggle script
+        document.getElementById('darkModeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            const isLightMode = document.body.classList.contains('light-mode');
+            document.getElementById('darkModeToggle').textContent = isLightMode ? '🌓' : '🌞';
+            localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.body.classList.add('light-mode');
+                document.getElementById('darkModeToggle').textContent = '🌓';
+            } else {
+                document.body.classList.remove('light-mode');
+                document.getElementById('darkModeToggle').textContent = '🌞';
+            }
+        });
+    </script> -->
+</body>
+
+</html>

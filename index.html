@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>">
+    <title>hruday.</title>
+    <!-- Add this in the <head> section of only this HTML page -->
+<style>
+    /* Glitch Animation for links on this page only */
+    a {
+        position: relative;
+        display: inline-block; /* Important for positioning pseudo-elements */
+    }
+
+    a:hover {
+        animation: glitch 0.3s infinite;
+    }
+
+    /* Create pseudo-elements on hover */
+    a:hover::before,
+    a:hover::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Place behind the original text */
+    }
+
+    a:hover::before {
+        animation: glitch-anim-1 0.2s infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+        transform: translate(-2px, -2px);
+        color: #0ff; /* Cyan for top slice */
+    }
+
+    a:hover::after {
+        animation: glitch-anim-2 0.3s infinite alternate;
+        clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+        transform: translate(2px, 2px);
+        color: #f0f; /* Magenta for bottom slice */
+    }
+
+    @keyframes glitch {
+        0% {
+            transform: translate(0);
+        }
+        20% {
+            transform: translate(-1px, 1px);
+        }
+        40% {
+            transform: translate(-1px, -1px);
+        }
+        60% {
+            transform: translate(1px, 1px);
+        }
+        80% {
+            transform: translate(1px, -1px);
+        }
+        100% {
+            transform: translate(0);
+        }
+    }
+
+    @keyframes glitch-anim-1 {
+        0% {
+            transform: translate(0);
+        }
+        20% {
+            transform: translate(-2px, 2px);
+        }
+        40% {
+            transform: translate(-2px, -2px);
+        }
+        60% {
+            transform: translate(2px, 2px);
+        }
+        80% {
+            transform: translate(2px, -2px);
+        }
+        100% {
+            transform: translate(0);
+        }
+    }
+
+    @keyframes glitch-anim-2 {
+        0% {
+            transform: translate(0);
+        }
+        20% {
+            transform: translate(2px, -2px);
+        }
+        40% {
+            transform: translate(2px, 2px);
+        }
+        60% {
+            transform: translate(-2px, -2px);
+        }
+        80% {
+            transform: translate(-2px, 2px);
+        }
+        100% {
+            transform: translate(0);
+        }
+    }
+</style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="intro">hi, i am
+            <span class="name">
+                <a href="/">hruday</a>
+            </span>
+        </div>
+        <div class="nav-elements">
+            <a href="/projects.html" class="contact">projects</a>
+            <a href="/research.html" class="contact">research</a>
+            <a href="/articles.html" class="contact">articles</a>
+            <a href="/contact.html" class="contact">contact me</a>
+            <!-- <button id="darkModeToggle" class="dark-mode-toggle">🌞</button> -->
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="body">
+        <div class="about" style="margin-top: 75px; margin-bottom: 80px;">
+            <div class="section">
+                hello! i am a dedicated software developer with a strong passion for computer vision and embedded
+                systems. i
+                specialize in crafting sophisticated web and mobile applications. i am always engaged in learning new
+                things
+                and honing my skillset. i am available to commit over 60 hours per week, ensuring more than 8-10 hours
+                of
+                time each day.
+            </div>
+            <div class="section">
+                <p class="tech-stack-title">tech stack</p>
+                <div class="card-tags">
+                    <p class="tag">react</p>
+                    <p class="tag">react-native</p>
+                    <p class="tag">node.js</p>
+                    <p class="tag">typescript</p>
+                    <p class="tag">python</p>
+                    <p class="tag">cpp</p>
+                    <p class="tag">html</p>
+                    <p class="tag">css</p>
+                    <p class="tag">go</p>
+                    <p class="tag">mysql</p>
+                    <p class="tag">aws</p>
+                    <p class="tag">opencv</p>
+                </div>
+            </div>
+            <div class="section">
+                check out my <a href="/projects.html" class="projects-link">projects</a> |
+                <a href="/articles.html" class="articles-link">articles</a>
+            </div>
+
+            <div class="section">
+                <div>know more about me.</div>
+                <a href="https://drive.google.com/file/d/1HcD0pKnGyK_5XUhvWXsGpqHpHE_IjP5P/view?usp=sharing"
+                    target="_blank" class="resume-link">resume</a> |
+                <a href="https://github.com/HrudayGurijala" target="_blank" class="github-link">github</a> |
+                <a href="https://leetcode.com/u/HrudayGurijala/" target="_blank" class="leetcode-link">leetcode</a>
+            </div>
+        </div>
+
+        <!-- Flipping image container -->
+        <div class="image-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="image" src="/assets/hruday.jpeg" alt="Image 1">
+                    </div>
+                    <div class="flip-card-back">
+                        <img class="image" src="/assets/flip-image.png" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Projects Section -->
+    <div class="projects-section">
+        <div class="section-header">
+            <h1>My projects</h1>
+            <a href="/articles.html" class="view-more">view more</a>
+        </div>
+        <div class="card-container">
+            <!-- code it -->
+            <div class="cards">
+                <div class="card-image">
+                    <img src="/assets/project6.png" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Code it</h3>
+                    </div>
+                    <div class="card-description">
+                        <p>Search engine to search problems from different coding platforms like leetcode, gfg and
+                            interviewbit etc.</p>
+                    </div>
+                    <div class="card-tags">
+                        <p class="tag">node.js</p>
+                        <p class="tag">express.js</p>
+                        <p class="tag">NLP</p>
+                        <p class="tag">selenium</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button><a href="https://github.com/HrudayGurijala/Code-It-main"
+                                target="_blank">github</a></button>
+                        <button><a href="https://code-it-main.onrender.com" target="_blank">live</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- learnflow -->
+            <div class="cards">
+                <div class="card-image">
+                    <img src="/assets/project5.png" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Learnflow</h3>
+                    </div>
+                    <div class="card-description">
+                        <p>Platform where users can create, share, and view video posts, comment on posts and like.</p>
+                    </div>
+                    <div class="card-tags">
+                        <p class="tag">node.js</p>
+                        <p class="tag">express.js</p>
+                        <p class="tag">mongodb</p>
+                        <p class="tag">AWS</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button><a href="https://github.com/HrudayGurijala/learnflow"
+                                target="_blank">github</a></button>
+                        <button><a href="https://learnflow-ibb1.onrender.com" target="_blank">live</a></button>
+                    </div>
+                </div>
+            </div>
+            <!-- smart classroom -->
+            <div class="cards">
+                <div class="card-image">
+                    <img src="/assets/project10.png" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Smart classroom</h3>
+                    </div>
+                    <div class="card-description">
+                        <p>Detect people and get sensors values from raspberry pi and give insights on react
+                            application.</p>
+                    </div>
+                    <div class="card-tags">
+                        <p class="tag">raspberry pi</p>
+                        <p class="tag">opencv</p>
+                        <p class="tag">react</p>
+                        <p class="tag">fastapi</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button><a href="https://github.com/HrudayGurijala/smart_classroom"
+                                target="_blank">github</a></button>
+                        <button><a
+                                href="https://drive.google.com/file/d/12-9apaXynG9jHmUM19z8SlYv6QAdIHi8/view?usp=sharing"
+                                target="_blank">demo</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Updated Articles Section with 3 cards -->
+    <div class="articles-section">
+        <div class="section-header">
+            <h1>My articles</h1>
+            <a href="/articles.html" class="view-more">view more</a>
+        </div>
+        <div class="card-container">
+            <!-- New Article Card -->
+            <div class="cards">
+                <div class="card-image">
+                    <img src="/assets/article4.webp" alt="Image Formats Article">
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Cryptography concepts for developers</h3>
+                    </div>
+                    <p>Useful cryptography concepts for developers and the evolution of cryptography along the history
+                        in software development.</p>
+                    <div class="card-tags">
+                        <p class="tag">Cryptography</p>
+                        <p class="tag">Hash</p>
+                        <p class="tag">Encryption</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button><a
+                                href="https://medium.com/@gurijalahruday/cryptography-concepts-for-developers-a90de71e384e"
+                                target="_blank">read article</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-image">
+                    <img src="/assets/article2.webp" alt="Image Formats Article">
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Why are there different file formats for digital images?</h3>
+                    </div>
+                    <p>5 minute read on history of digital images and how an image file is transferred.</p>
+                    <div class="card-tags">
+                        <p class="tag">digital images</p>
+                        <p class="tag">image files</p>
+                        <p class="tag">file transfer</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button><a
+                                href="https://medium.com/@gurijalahruday/why-there-are-different-file-formats-for-digital-images-8841e9852ce0"
+                                target="_blank">read article</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card-image">
+                    <img src="/assets/article1.webp" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-title">
+                        <h3>Journey of a HTTP request — A Deep dive.</h3>
+                    </div>
+                    <p>Ever wondered how a HTTP request gets served to your browser within few seconds.</p>
+                    <div class="card-tags">
+                        <p class="tag">HTTP protocol</p>
+                        <p class="tag">development</p>
+                        <p class="tag">DOM</p>
+                    </div>
+                    <div class="card-buttons">
+                        <button><a
+                                href="https://medium.com/@gurijalahruday/journey-of-a-http-request-a-deep-dive-98d7841abb5e"
+                                target="_blank">read article</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <a href="https://github.com/HrudayGurijala" target="_blank">github</a> |
+        <a href="https://medium.com/@gurijalahruday" target="_blank">medium</a> |
+        <a href="https://www.linkedin.com/in/hruday-gurijala-61b472248/" target="_blank">linkedin</a> |
+        <a href="https://x.com/hrudaygg" target="_blank">twitter</a> |
+        <a href="https://buymeacoffee.com/gurijalahrk" target="_blank">biryani</a>
+    </div>
+    <footer style="text-align: center; font-size: 14px; color:#d3d3d3;">
+        &copy; 2024 Design and crafted by Hruday Gurijala
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('a');
+        links.forEach(link => {
+            link.setAttribute('data-text', link.textContent);
+        });
+    });
+</script>
+</body>
+
+
+
+
+</html>
