@@ -100,7 +100,6 @@ body.light-mode::before {
     overflow: hidden;
     position: relative;
     flex: 0 0 auto;
-    
 }
 
 .card-image img {
