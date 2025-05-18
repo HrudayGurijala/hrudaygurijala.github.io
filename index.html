@@ -22,6 +22,91 @@
             margin: 2rem 0;
         }
 
+        /* Star Glow Animation */
+        @keyframes starGlowGreen {
+            0%, 100% { text-shadow: none; }
+            50% {
+                text-shadow: 0 0 10px rgba(173, 255, 47, 0.8),
+                            0 0 20px rgba(173, 255, 47, 0.6),
+                            0 0 30px rgba(173, 255, 47, 0.4),
+                            0 0 40px rgba(173, 255, 47, 0.3);
+            }
+        }
+
+        @keyframes starGlowYellow {
+            0%, 100% { text-shadow: none; }
+            50% {
+                text-shadow: 0 0 10px rgba(255, 255, 0, 0.8),
+                            0 0 20px rgba(255, 255, 0, 0.6),
+                            0 0 30px rgba(255, 255, 0, 0.4),
+                            0 0 40px rgba(255, 255, 0, 0.3);
+            }
+        }
+
+        @keyframes starGlowRed {
+            0%, 100% { text-shadow: none; }
+            50% {
+                text-shadow: 0 0 10px rgba(255, 0, 0, 0.8),
+                            0 0 20px rgba(255, 0, 0, 0.6),
+                            0 0 30px rgba(255, 0, 0, 0.4),
+                            0 0 40px rgba(255, 0, 0, 0.3);
+            }
+        }
+
+        .star-link {
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        /* Projects and Articles links (green) */
+        .projects-link.star-link {
+            animation: starGlowGreen 3s ease-in-out infinite;
+            animation-delay: calc(var(--random-delay) * 1s);
+        }
+
+        .articles-link.star-link {
+            animation: starGlowYellow 3s ease-in-out infinite;
+            animation-delay: calc(var(--random-delay) * 1s);
+        }
+
+        /* Resume, GitHub, and LeetCode links (red) */
+        .resume-link.star-link,
+        .github-link.star-link,
+        .leetcode-link.star-link {
+            animation: starGlowRed 3s ease-in-out infinite;
+            animation-delay: calc(var(--random-delay) * 1s);
+        }
+
+        .star-link:hover {
+            animation: none;
+            transform: scale(1.05);
+        }
+
+        .projects-link:hover {
+            text-shadow: 0 0 15px rgba(173, 255, 47, 1),
+                        0 0 30px rgba(173, 255, 47, 0.8),
+                        0 0 45px rgba(173, 255, 47, 0.6),
+                        0 0 60px rgba(173, 255, 47, 0.4);
+        }
+
+        .articles-link:hover {
+            text-shadow: 0 0 15px rgba(255, 255, 0, 1),
+                        0 0 30px rgba(255, 255, 0, 0.8),
+                        0 0 45px rgba(255, 255, 0, 0.6),
+                        0 0 60px rgba(255, 255, 0, 0.4);
+        }
+
+        .resume-link:hover,
+        .github-link:hover,
+        .leetcode-link:hover {
+            text-shadow: 0 0 15px rgba(255, 0, 0, 1),
+                        0 0 30px rgba(255, 0, 0, 0.8),
+                        0 0 45px rgba(255, 0, 0, 0.6),
+                        0 0 60px rgba(255, 0, 0, 0.4);
+        }
+
         /* Responsive grid adjustments */
         @media (max-width: 1200px) {
             .card-container {
@@ -39,7 +124,7 @@
         .section-divider {
             height: 1px;
             background: linear-gradient(to right, transparent, rgba(255, 234, 0, 0.3), transparent);
-            margin: 4rem 0;
+            margin: 1rem 0;
         }
     </style>
 </head>
@@ -57,16 +142,16 @@
             gurijala
         </div>
         <div class="nav-elements">
-            <a href="/projects.html" class="contact">projects</a>
-            <a href="/research.html" class="contact">research</a>
-            <a href="/articles.html" class="contact">articles</a>
-            <a href="/contact.html" class="contact">contact me</a>
+            <a href="/projects.html" class="contact" style="color: #FFEA00;">projects</a>
+            <a href="/research.html" class="contact" style="color: #FFEA00;">research</a>
+            <a href="/articles.html" class="contact" style="color: #FFEA00;">articles</a>
+            <a href="/contact.html" class="contact" style="color: #FFEA00;">contact me</a>
         </div>
     </div>
 
     <!-- content -->
     <div class="body">
-        <div class="about" style="margin-top: 75px; margin-bottom: 80px;">
+        <div class="about" style="margin-top: 75px;">
             <div class="section">
                 hello! i am a dedicated software developer with a strong passion for computer vision and embedded
                 systems. i
@@ -95,16 +180,16 @@
             </div>
 
             <div class="section">
-                check out my <a href="/projects.html" class="projects-link">projects</a> |
-                <a href="/articles.html" class="articles-link">articles</a>
+                check out my <a href="/projects.html" class="star-link projects-link" style="--random-delay: 0.2">projects</a> |
+                <a href="/articles.html" class="star-link articles-link" style="--random-delay: 1.5">articles</a>
             </div>
 
             <div class="section">
                 <div>know more about me.</div>
                 <a href="https://drive.google.com/file/d/1HcD0pKnGyK_5XUhvWXsGpqHpHE_IjP5P/view?usp=sharing"
-                    target="_blank" class="resume-link">resume</a> |
-                <a href="https://github.com/HrudayGurijala" target="_blank" class="github-link">github</a> |
-                <a href="https://leetcode.com/u/HrudayGurijala/" target="_blank" class="leetcode-link">leetcode</a>
+                    target="_blank" class="star-link resume-link" style="--random-delay: 2.8">resume</a> |
+                <a href="https://github.com/HrudayGurijala" target="_blank" class="star-link github-link" style="--random-delay: 1.7">github</a> |
+                <a href="https://leetcode.com/u/HrudayGurijala/" target="_blank" class="star-link leetcode-link" style="--random-delay: 3.3">leetcode</a>
             </div>
         </div>
 
@@ -134,7 +219,6 @@
         <div class="card-container">
             <!-- code it -->
             <div class="cards">
-                <div class="featured-badge">Featured</div>
                 <div class="card-image">
                     <img src="/assets/project6.png" alt="Code It Project">
                 </div>
@@ -235,10 +319,6 @@
                     <div class="card-title">
                         <h3>Cryptography concepts for developers</h3>
                     </div>
-                    <div class="article-meta">
-                        <span class="reading-time"><i class="far fa-clock"></i> 8 min read</span>
-                        <span class="article-category">Development</span>
-                    </div>
                     <p>Useful cryptography concepts for developers and the evolution of cryptography along the history
                         in software development.</p>
                     <div class="card-tags">
@@ -263,10 +343,6 @@
                     <div class="card-title">
                         <h3>Why are there different file formats for digital images?</h3>
                     </div>
-                    <div class="article-meta">
-                        <span class="reading-time"><i class="far fa-clock"></i> 5 min read</span>
-                        <span class="article-category">Technology</span>
-                    </div>
                     <p>5 minute read on history of digital images and how an image file is transferred.</p>
                     <div class="card-tags">
                         <p class="tag">digital images</p>
@@ -289,10 +365,6 @@
                 <div class="card-content">
                     <div class="card-title">
                         <h3>Journey of a HTTP request — A Deep dive.</h3>
-                    </div>
-                    <div class="article-meta">
-                        <span class="reading-time"><i class="far fa-clock"></i> 6 min read</span>
-                        <span class="article-category">Web Development</span>
                     </div>
                     <p>Ever wondered how a HTTP request gets served to your browser within few seconds.</p>
                     <div class="card-tags">

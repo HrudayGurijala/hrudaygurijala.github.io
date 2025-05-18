@@ -70,6 +70,27 @@
             resize: vertical;
         }
 
+        .form-group select {
+            width: 100%;
+            padding: 0.6rem;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 234, 0, 0.3);
+            color: #ffffff;
+            font-family: 'VT323', monospace;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        .form-group select option {
+            background-color: rgba(255, 234, 0);
+            color: #000000;
+            padding: 10px;
+        }
+
         .submit-btn {
             background-color: #FFEA00;
             color: #000000;
@@ -93,7 +114,12 @@
             text-align: center;
             margin-top: 2rem;
             padding-top: 2rem;
-            border-top: 1px solid rgba(255, 234, 0, 0.2);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 234, 0, 0.3), transparent);
+            margin: 1rem 0;
         }
 
         .support-btn {
@@ -105,6 +131,7 @@
             text-decoration: none;
             font-size: 1.1rem;
             transition: all 0.3s ease;
+            margin-top: 1rem;
         }
 
         .support-btn:hover {
@@ -173,23 +200,24 @@
 
     <!-- navbar -->
     <div class="navbar">
-        <div class="intro">hi, i am
+        <div class="intro">
             <span class="name">
                 <a href="/">hruday</a>
             </span>
+            gurijala
         </div>
         <div class="nav-elements">
-            <a href="/projects.html" class="contact">projects</a>
-            <a href="/research.html" class="contact">research</a>
-            <a href="/articles.html" class="contact">articles</a>
-            <a href="/contact.html" class="contact">contact me</a>
+            <a href="/projects.html" class="contact" style="color: #FFEA00;">projects</a>
+            <a href="/research.html" class="contact" style="color: #FFEA00;">research</a>
+            <a href="/articles.html" class="contact" style="color: #FFEA00;">articles</a>
+            <a href="/contact.html" class="contact" style="color: #FFEA00;">contact me</a>
         </div>
     </div>
 
     <!-- content -->
     <div class="contact-page">
         <div class="contact-header">
-            <h1>Don't be a Stranger! 👋</h1>
+            <h1>Don't be a Stranger!</h1>
             <p class="subtitle">Let's create something awesome together.</p>
         </div>
 
@@ -214,9 +242,13 @@
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
 
+        <div class="section-divider"></div>
+
         <div class="support-section">
-            <p>Support my work with a biryani! 🍛</p>
-            <a href="https://buymeacoffee.com/gurijalahrk" target="_blank" class="support-btn">Buy me a biryani</a>
+            <span>
+                <p>Support my work with a biryani! 🍛</p>
+                <a href="https://buymeacoffee.com/gurijalahrk" target="_blank" class="support-btn">Buy me a biryani</a>
+            </span>
         </div>
     </div>
 
