@@ -7,127 +7,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/ambient-bg.css">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>">
     <title>hruday.</title>
-    <!-- Add this in the <head> section of only this HTML page -->
-<style>
-    /* Glitch Animation for links on this page only */
-    a {
-        position: relative;
-        display: inline-block; /* Important for positioning pseudo-elements */
-    }
+    <style>
+        /* Project Card Enhancements */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
 
-    a:hover {
-        animation: glitch 0.3s infinite;
-    }
+        /* Responsive grid adjustments */
+        @media (max-width: 1200px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-    /* Create pseudo-elements on hover */
-    a:hover::before,
-    a:hover::after {
-        content: attr(data-text);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1; /* Place behind the original text */
-    }
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
 
-    a:hover::before {
-        animation: glitch-anim-1 0.2s infinite;
-        clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-        transform: translate(-2px, -2px);
-        color: #0ff; /* Cyan for top slice */
-    }
-
-    a:hover::after {
-        animation: glitch-anim-2 0.3s infinite alternate;
-        clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-        transform: translate(2px, 2px);
-        color: #f0f; /* Magenta for bottom slice */
-    }
-
-    @keyframes glitch {
-        0% {
-            transform: translate(0);
+        /* Section Dividers */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 234, 0, 0.3), transparent);
+            margin: 4rem 0;
         }
-        20% {
-            transform: translate(-1px, 1px);
-        }
-        40% {
-            transform: translate(-1px, -1px);
-        }
-        60% {
-            transform: translate(1px, 1px);
-        }
-        80% {
-            transform: translate(1px, -1px);
-        }
-        100% {
-            transform: translate(0);
-        }
-    }
-
-    @keyframes glitch-anim-1 {
-        0% {
-            transform: translate(0);
-        }
-        20% {
-            transform: translate(-2px, 2px);
-        }
-        40% {
-            transform: translate(-2px, -2px);
-        }
-        60% {
-            transform: translate(2px, 2px);
-        }
-        80% {
-            transform: translate(2px, -2px);
-        }
-        100% {
-            transform: translate(0);
-        }
-    }
-
-    @keyframes glitch-anim-2 {
-        0% {
-            transform: translate(0);
-        }
-        20% {
-            transform: translate(2px, -2px);
-        }
-        40% {
-            transform: translate(2px, 2px);
-        }
-        60% {
-            transform: translate(-2px, -2px);
-        }
-        80% {
-            transform: translate(-2px, 2px);
-        }
-        100% {
-            transform: translate(0);
-        }
-    }
-</style>
+    </style>
 </head>
 
 <body>
+    <!-- Ambient Background Canvas -->
+    <canvas id="ambient-bg"></canvas>
+
     <!-- navbar -->
     <div class="navbar">
-        <div class="intro">hi, i am
+        <div class="intro">
             <span class="name">
                 <a href="/">hruday</a>
             </span>
+            gurijala
         </div>
         <div class="nav-elements">
             <a href="/projects.html" class="contact">projects</a>
             <a href="/research.html" class="contact">research</a>
             <a href="/articles.html" class="contact">articles</a>
             <a href="/contact.html" class="contact">contact me</a>
-            <!-- <button id="darkModeToggle" class="dark-mode-toggle">🌞</button> -->
         </div>
     </div>
 
@@ -160,6 +93,7 @@
                     <p class="tag">opencv</p>
                 </div>
             </div>
+
             <div class="section">
                 check out my <a href="/projects.html" class="projects-link">projects</a> |
                 <a href="/articles.html" class="articles-link">articles</a>
@@ -189,19 +123,20 @@
         </div>
     </div>
 
-    <hr>
+    <div class="section-divider"></div>
 
     <!-- Projects Section -->
     <div class="projects-section">
         <div class="section-header">
             <h1>My projects</h1>
-            <a href="/articles.html" class="view-more">view more</a>
+            <a href="/projects.html" class="view-more">view more</a>
         </div>
         <div class="card-container">
             <!-- code it -->
             <div class="cards">
+                <div class="featured-badge">Featured</div>
                 <div class="card-image">
-                    <img src="/assets/project6.png" alt="">
+                    <img src="/assets/project6.png" alt="Code It Project">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
@@ -228,7 +163,7 @@
             <!-- learnflow -->
             <div class="cards">
                 <div class="card-image">
-                    <img src="/assets/project5.png" alt="">
+                    <img src="/assets/project5.png" alt="Learnflow Project">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
@@ -250,10 +185,11 @@
                     </div>
                 </div>
             </div>
+
             <!-- smart classroom -->
             <div class="cards">
                 <div class="card-image">
-                    <img src="/assets/project10.png" alt="">
+                    <img src="/assets/project10.png" alt="Smart Classroom Project">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
@@ -281,23 +217,27 @@
         </div>
     </div>
 
-    <hr>
+    <div class="section-divider"></div>
 
-    <!-- Updated Articles Section with 3 cards -->
+    <!-- Articles Section -->
     <div class="articles-section">
         <div class="section-header">
             <h1>My articles</h1>
             <a href="/articles.html" class="view-more">view more</a>
         </div>
         <div class="card-container">
-            <!-- New Article Card -->
+            <!-- Cryptography Article -->
             <div class="cards">
                 <div class="card-image">
-                    <img src="/assets/article4.webp" alt="Image Formats Article">
+                    <img src="/assets/article4.webp" alt="Cryptography Article">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
                         <h3>Cryptography concepts for developers</h3>
+                    </div>
+                    <div class="article-meta">
+                        <span class="reading-time"><i class="far fa-clock"></i> 8 min read</span>
+                        <span class="article-category">Development</span>
                     </div>
                     <p>Useful cryptography concepts for developers and the evolution of cryptography along the history
                         in software development.</p>
@@ -314,6 +254,7 @@
                 </div>
             </div>
 
+            <!-- Image Formats Article -->
             <div class="cards">
                 <div class="card-image">
                     <img src="/assets/article2.webp" alt="Image Formats Article">
@@ -321,6 +262,10 @@
                 <div class="card-content">
                     <div class="card-title">
                         <h3>Why are there different file formats for digital images?</h3>
+                    </div>
+                    <div class="article-meta">
+                        <span class="reading-time"><i class="far fa-clock"></i> 5 min read</span>
+                        <span class="article-category">Technology</span>
                     </div>
                     <p>5 minute read on history of digital images and how an image file is transferred.</p>
                     <div class="card-tags">
@@ -336,13 +281,18 @@
                 </div>
             </div>
 
+            <!-- HTTP Article -->
             <div class="cards">
                 <div class="card-image">
-                    <img src="/assets/article1.webp" alt="">
+                    <img src="/assets/article1.webp" alt="HTTP Article">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
                         <h3>Journey of a HTTP request — A Deep dive.</h3>
+                    </div>
+                    <div class="article-meta">
+                        <span class="reading-time"><i class="far fa-clock"></i> 6 min read</span>
+                        <span class="article-category">Web Development</span>
                     </div>
                     <p>Ever wondered how a HTTP request gets served to your browser within few seconds.</p>
                     <div class="card-tags">
@@ -371,17 +321,8 @@
     <footer style="text-align: center; font-size: 14px; color:#d3d3d3;">
         &copy; 2024 Design and crafted by Hruday Gurijala
     </footer>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const links = document.querySelectorAll('a');
-        links.forEach(link => {
-            link.setAttribute('data-text', link.textContent);
-        });
-    });
-</script>
+
+    <script src="assets/js/ambient-bg.js"></script>
 </body>
-
-
-
 
 </html>

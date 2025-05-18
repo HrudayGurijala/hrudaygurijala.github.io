@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Previous head content remains the same -->
 
 <head>
     <meta charset="UTF-8">
@@ -8,26 +7,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/ambient-bg.css">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>">
-    <link rel="stylesheet" href="style.css">
-    <title>hruday.</title>
+    <title>Projects - hruday.</title>
 </head>
 
 <body>
-    <!-- navbar remains the same -->
+    <!-- Ambient Background Canvas -->
+    <canvas id="ambient-bg"></canvas>
+
+    <!-- navbar -->
     <div class="navbar">
-        <div class="intro">hi, i am
+        <div class="intro">
             <span class="name">
                 <a href="/">hruday</a>
             </span>
+            gurijala
         </div>
         <div class="nav-elements">
             <a href="/projects.html" class="contact">projects</a>
             <a href="/research.html" class="contact">research</a>
             <a href="/articles.html" class="contact">articles</a>
             <a href="/contact.html" class="contact">contact me</a>
-            <!-- <button id="darkModeToggle" class="dark-mode-toggle">🌞</button> -->
         </div>
     </div>
 
@@ -537,7 +541,7 @@
         </div>
     </div>
 
-    <!-- footer remains the same -->
+    <!-- footer -->
     <div class="footer">
         <a href="https://github.com/HrudayGurijala" target="_blank">github</a> |
         <a href="https://medium.com/@gurijalahruday" target="_blank">medium</a> |
@@ -545,41 +549,11 @@
         <a href="https://x.com/hrudaygg" target="_blank">twitter</a> |
         <a href="https://buymeacoffee.com/gurijalahrk" target="_blank">biryani</a>
     </div>
-    <footer style="text-align: center;  font-size: 14px; color:#d3d3d3;">
+    <footer class="copyright">
         &copy; 2024 Design and crafted by Hruday Gurijala
     </footer>
 
-    <!-- Script remains the same -->
-    <!-- <script>
-        document.getElementById('darkModeToggle').addEventListener('click', () => {
-            // Toggle the 'light-mode' class
-            document.body.classList.toggle('light-mode');
-
-            // Check if 'light-mode' is active
-            const isLightMode = document.body.classList.contains('light-mode');
-
-            // Update the toggle button text
-            document.getElementById('darkModeToggle').textContent = isLightMode ? '🌓' : '🌞';
-
-            // Save the current theme in localStorage
-            localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
-        });
-
-        // Apply the saved theme on page load
-        window.addEventListener('DOMContentLoaded', () => {
-            const savedTheme = localStorage.getItem('theme');
-
-            if (savedTheme === 'light') {
-                document.body.classList.add('light-mode');
-                document.getElementById('darkModeToggle').textContent = '🌓';
-            } else {
-                document.body.classList.remove('light-mode');
-                document.getElementById('darkModeToggle').textContent = '🌞';
-            }
-        });
-
-
-    </script> -->
+    <script src="assets/js/ambient-bg.js"></script>
 </body>
 
 </html>

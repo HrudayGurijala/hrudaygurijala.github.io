@@ -1,0 +1,41 @@
+/* Ambient Background */
+#ambient-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000;
+}
+
+/* Ensure content is above the background */
+.body, .projects-section, .articles-section, .footer, 
+.contact-section, .research-section {
+    position: relative;
+    z-index: 1;
+}
+
+/* Add subtle backdrop blur to sections for better readability */
+.projects-section, .articles-section, .contact-section, .research-section {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+}
+
+/* Enhance card visibility against the animated background */
+.cards {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Improve text readability */
+.card-content, .section, .section-header h1 {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+} 
