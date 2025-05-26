@@ -44,7 +44,7 @@ body.light-mode::before {
     position: sticky;
     top: 0;
     display: flex;
-    padding: 20px;
+    padding: 20px 60px;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     z-index: 1000;
@@ -702,10 +702,11 @@ body.light-mode .cards {
     display: inline-block;
     background-color: #FFEA00;
     color: #000000 !important;
-    padding: 0.8rem 1.5rem;
+    padding: 0.4rem 1.5rem;
     border-radius: 25px;
     text-align: center;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .support-btn:hover {
