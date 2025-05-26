@@ -19,38 +19,53 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
-            margin: 2rem 0;
+            margin: 0 1rem;
         }
 
 
         /* Star Glow Animation */
         @keyframes starGlowGreen {
-            0%, 100% { text-shadow: none; }
+
+            0%,
+            100% {
+                text-shadow: none;
+            }
+
             50% {
                 text-shadow: 0 0 10px rgba(173, 255, 47, 0.8),
-                            0 0 20px rgba(173, 255, 47, 0.6),
-                            0 0 30px rgba(173, 255, 47, 0.4),
-                            0 0 40px rgba(173, 255, 47, 0.3);
+                    0 0 20px rgba(173, 255, 47, 0.6),
+                    0 0 30px rgba(173, 255, 47, 0.4),
+                    0 0 40px rgba(173, 255, 47, 0.3);
             }
         }
 
         @keyframes starGlowYellow {
-            0%, 100% { text-shadow: none; }
+
+            0%,
+            100% {
+                text-shadow: none;
+            }
+
             50% {
                 text-shadow: 0 0 10px rgba(255, 255, 0, 0.8),
-                            0 0 20px rgba(255, 255, 0, 0.6),
-                            0 0 30px rgba(255, 255, 0, 0.4),
-                            0 0 40px rgba(255, 255, 0, 0.3);
+                    0 0 20px rgba(255, 255, 0, 0.6),
+                    0 0 30px rgba(255, 255, 0, 0.4),
+                    0 0 40px rgba(255, 255, 0, 0.3);
             }
         }
 
         @keyframes starGlowRed {
-            0%, 100% { text-shadow: none; }
+
+            0%,
+            100% {
+                text-shadow: none;
+            }
+
             50% {
                 text-shadow: 0 0 10px rgba(255, 0, 0, 0.8),
-                            0 0 20px rgba(255, 0, 0, 0.6),
-                            0 0 30px rgba(255, 0, 0, 0.4),
-                            0 0 40px rgba(255, 0, 0, 0.3);
+                    0 0 20px rgba(255, 0, 0, 0.6),
+                    0 0 30px rgba(255, 0, 0, 0.4),
+                    0 0 40px rgba(255, 0, 0, 0.3);
             }
         }
 
@@ -87,25 +102,25 @@
 
         .projects-link:hover {
             text-shadow: 0 0 15px rgba(173, 255, 47, 1),
-                        0 0 30px rgba(173, 255, 47, 0.8),
-                        0 0 45px rgba(173, 255, 47, 0.6),
-                        0 0 60px rgba(173, 255, 47, 0.4);
+                0 0 30px rgba(173, 255, 47, 0.8),
+                0 0 45px rgba(173, 255, 47, 0.6),
+                0 0 60px rgba(173, 255, 47, 0.4);
         }
 
         .articles-link:hover {
             text-shadow: 0 0 15px rgba(255, 255, 0, 1),
-                        0 0 30px rgba(255, 255, 0, 0.8),
-                        0 0 45px rgba(255, 255, 0, 0.6),
-                        0 0 60px rgba(255, 255, 0, 0.4);
+                0 0 30px rgba(255, 255, 0, 0.8),
+                0 0 45px rgba(255, 255, 0, 0.6),
+                0 0 60px rgba(255, 255, 0, 0.4);
         }
 
         .resume-link:hover,
         .github-link:hover,
         .leetcode-link:hover {
             text-shadow: 0 0 15px rgba(255, 0, 0, 1),
-                        0 0 30px rgba(255, 0, 0, 0.8),
-                        0 0 45px rgba(255, 0, 0, 0.6),
-                        0 0 60px rgba(255, 0, 0, 0.4);
+                0 0 30px rgba(255, 0, 0, 0.8),
+                0 0 45px rgba(255, 0, 0, 0.6),
+                0 0 60px rgba(255, 0, 0, 0.4);
         }
 
         /* Responsive grid adjustments */
@@ -125,179 +140,7 @@
         .section-divider {
             height: 1px;
             background: linear-gradient(to right, transparent, rgba(255, 234, 0, 0.3), transparent);
-            margin: 1rem 0;
-        }
-
-        /* Contact Footer Styles */
-        .main-footer {
-            margin-top: 40px;
-            padding: 40px 40px 30px;
-            border-top: 1px solid rgba(255, 234, 0, 0.3);
-        }
-
-        .footer-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: start;
-        }
-
-        .footer-left h2 {
-            font-size: 2rem;
-            color: #FFEA00;
-            margin-bottom: 1rem;
-        }
-
-        .footer-left p {
-            margin-bottom: 1rem;
-            opacity: 0.8;
-            line-height: 1.6;
-        }
-
-        .footer-left .contact-email {
-            color: #00d4ff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-left .contact-email:hover {
-            color: #FFEA00;
-        }
-
-        .contact-form {
-            margin-bottom: 1rem;
-        }
-
-        .form-group {
-            margin-bottom: 1.2rem;
-        }
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 0.1rem;  /* Changed from 0.6rem */
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(255, 234, 0, 0.3);
-    color: #ffffff;
-    font-family: 'VT323', monospace;
-    font-size: 0.9rem;  /* Changed from 1.1rem */
-    transition: all 0.3s ease;
-}
-
-.form-group textarea {
-    height: 50px;  /* Changed from 120px */
-    resize: vertical;
-}
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-bottom-color: #FFEA00;
-        }
-
-
-        .form-group select {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-        }
-
-        .form-group select option {
-            background-color: rgba(255, 234, 0);
-            color: #000000;
-            padding: 10px;
-        }
-
-.submit-btn {
-    background-color: #FFEA00;
-    color: #000000;
-    padding: 0.4rem 1rem;  /* Changed from 0.6rem 1.2rem */
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: 'VT323', monospace;
-    font-size: 0.9rem;  /* Changed from 1.1rem */
-    transition: all 0.3s ease;
-    width: 100%;
-}
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 234, 0, 0.5);
-        }
-
-        .copyright-section {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 234, 0, 0.2);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .copyright-left {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .copyright-left .heart {
-            color: #00d4ff;
-            font-size: 1.2rem;
-        }
-
-        .copyright-right {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .copyright-right a {
-            color: #FFEA00;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .copyright-right a:hover {
-            color: #00d4ff;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .main-footer {
-                padding: 30px 20px 25px;
-            }
-
-            .footer-container {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .footer-left h2 {
-                font-size: 1.8rem;
-            }
-
-            .copyright-section {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .copyright-right {
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .copyright-right {
-                flex-direction: column;
-                gap: 1rem;
-            }
+            margin: 0.5rem 0;
         }
     </style>
 </head>
@@ -324,7 +167,7 @@
 
     <!-- content -->
     <div class="body">
-        <div class="about" style="margin-top: 75px; margin-bottom: 50px;">
+        <div class="about">
             <div class="section">
                 hello! i am a dedicated software developer with a strong passion for computer vision and embedded
                 systems. i
@@ -336,24 +179,182 @@
             </div>
             <div class="section">
                 <p class="tech-stack-title">tech stack</p>
-                <div class="card-tags">
-                    <p class="tag">react</p>
-                    <p class="tag">react-native</p>
-                    <p class="tag">node.js</p>
-                    <p class="tag">typescript</p>
-                    <p class="tag">python</p>
-                    <p class="tag">cpp</p>
-                    <p class="tag">html</p>
-                    <p class="tag">css</p>
-                    <p class="tag">go</p>
-                    <p class="tag">mysql</p>
-                    <p class="tag">aws</p>
-                    <p class="tag">opencv</p>
-                </div>
+                <marquee behavior="slide" direction="left" scrollamount="40" height="50px" scrolldelay="500"
+                    width="100%">
+                    <div class="card-tags" style="display: inline-flex; gap: 0.7rem;">
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript">
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                alt="TypeScript">
+                            <span class="skill-name">TypeScript</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                                alt="C++">
+                            <span class="skill-name">C++</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go">
+                            <span class="skill-name">Go</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="React">
+                            <span class="skill-name">React.js</span>
+                        </div>
+                    </div>
+                </marquee>
+
+
+                <marquee behavior="slide" direction="right" scrollamount="40" height="50px" scrolldelay="500"
+                    width="100%">
+                    <div class="card-tags" style="display: inline-flex; gap: 0.7rem;">
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                alt="React Native">
+                            <span class="skill-name">React Native</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                alt="Bootstrap">
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                alt="EJS">
+                            <span class="skill-name">EJS</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                                alt="TensorFlow">
+                            <span class="skill-name">TensorFlow</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg"
+                                alt="Keras">
+                            <span class="skill-name">Keras</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+                                alt="OpenCV">
+                            <span class="skill-name">OpenCV</span>
+                        </div>
+
+                    </div>
+                </marquee>
+
+
+                <marquee behavior="slide" direction="left" scrollamount="40" height="50px" scrolldelay="500"
+                    width="100%">
+                    <div class="card-tags" style="display: inline-flex; gap: 0.7rem;">
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                alt="Node.js">
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+                                alt="FastAPI">
+                            <span class="skill-name">FastAPI</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="HTML">
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                alt="CSS">
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                alt="MongoDB">
+                            <span class="skill-name">MongoDB</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MySQL">
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                    </div>
+                </marquee>
+
+                <marquee behavior="slide" direction="right" scrollamount="40" height="50px" scrolldelay="500"
+                    width="100%">
+                    <div class="card-tags" style="display: inline-flex; gap: 0.5rem;">
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                alt="PostgreSQL">
+                            <span class="skill-name">PostgreSQL</span>
+                        </div>
+                        <div class="tag">
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                                height="19px" alt="AWS">
+                            <span class="skill-name">AWS</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                alt="Docker">
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="GitHub">
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="tag">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
+                                alt="Selenium">
+                            <span class="skill-name">Selenium</span>
+                        </div>
+
+
+                    </div>
+                </marquee>
+
             </div>
 
             <div class="section">
-                check out my <a href="/projects.html" class="star-link projects-link" style="--random-delay: 0.2">projects</a> |
+                check out my <a href="/projects.html" class="star-link projects-link"
+                    style="--random-delay: 0.2">projects</a> |
                 <a href="/articles.html" class="star-link articles-link" style="--random-delay: 1.5">articles</a>
             </div>
 
@@ -361,8 +362,10 @@
                 <div>know more about me.</div>
                 <a href="https://drive.google.com/file/d/1HcD0pKnGyK_5XUhvWXsGpqHpHE_IjP5P/view?usp=sharing"
                     target="_blank" class="star-link resume-link" style="--random-delay: 2.8">resume</a> |
-                <a href="https://github.com/HrudayGurijala" target="_blank" class="star-link github-link" style="--random-delay: 1.7">github</a> |
-                <a href="https://leetcode.com/u/HrudayGurijala/" target="_blank" class="star-link leetcode-link" style="--random-delay: 3.3">leetcode</a>
+                <a href="https://github.com/HrudayGurijala" target="_blank" class="star-link github-link"
+                    style="--random-delay: 1.7">github</a> |
+                <a href="https://leetcode.com/u/HrudayGurijala/" target="_blank" class="star-link leetcode-link"
+                    style="--random-delay: 3.3">leetcode</a>
             </div>
         </div>
 
@@ -371,7 +374,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="image" src="/assets/hruday.jpeg" alt="Image 1">
+                        <img class="image" src="/assets/hruday.png" alt="Image 1">
                     </div>
                     <div class="flip-card-back">
                         <img class="image" src="/assets/flip-image.png" alt="Image 2">
@@ -384,7 +387,7 @@
     <div class="section-divider"></div>
 
     <!-- Projects Section -->
-    <div style="margin: 40px;" >
+    <div style="margin: 0 1rem;">
         <div class="section-header">
             <h1>My projects</h1>
             <a href="/projects.html" class="view-more">view more</a>
@@ -477,7 +480,7 @@
     <div class="section-divider"></div>
 
     <!-- Articles Section -->
-    <div style="margin: 40px;">
+    <div style="margin: 0 1rem">
         <div class="section-header">
             <h1>My articles</h1>
             <a href="/articles.html" class="view-more">view more</a>
@@ -555,20 +558,20 @@
         </div>
     </div>
 
-        <!-- Contact Footer Section -->
+    <div class="section-divider"></div>
+    <!-- Contact Footer Section -->
     <footer class="main-footer" id="contact">
         <div class="footer-container">
             <!-- Left Side: Get in Touch -->
             <div class="footer-left">
                 <h2>Get in Touch</h2>
-                <p>If you have any inquiries, please feel free to reach out. You can contact me via email at 
+                <p>If you have any inquiries, please feel free to reach out. You can contact me via email at
                     <a href="mailto:gurijalahruday@gmail.com" class="contact-email">gurijalahruday@gmail.com</a>
                 </p>
-
-                <p>Support my work with a biryani! 🍛</p>
-                <a href="https://buymeacoffee.com/gurijalahrk" target="_blank" style="text-decoration: none;" class="support-btn">Buy me a biryani</a>
-
-                
+                <p>Support me
+                    <a href="https://buymeacoffee.com/gurijalahrk" target="_blank" style="text-decoration: none;"
+                        class="support-btn">Buy me a biryani</a>
+                </p>
             </div>
 
             <!-- Right Side: Contact Form -->
@@ -597,19 +600,20 @@
         </div>
 
 
-    <!-- footer -->
-    <div class="footer">
-        <a href="https://github.com/HrudayGurijala" target="_blank" style="color: #FFEA00;">github</a> |
-        <a href="https://medium.com/@gurijalahruday" target="_blank" style="color: #FFEA00;">medium</a> |
-        <a href="https://www.linkedin.com/in/hruday-gurijala-61b472248/" target="_blank" style="color: #FFEA00;">linkedin</a> |
-        <a href="https://x.com/hrudaygg" target="_blank" style="color: #FFEA00;">twitter</a> |
-        <a href="https://buymeacoffee.com/gurijalahrk" target="_blank" style="color: #FFEA00;">biryani</a>
-    </div>
-    <footer style="text-align: center; font-size: 14px; color:#d3d3d3;">
-        &copy; 2024 Design and crafted by Hruday Gurijala
-    </footer>
+        <!-- footer -->
+        <div class="footer">
+            <a href="https://github.com/HrudayGurijala" target="_blank" style="color: #FFEA00;">github</a> |
+            <a href="https://medium.com/@gurijalahruday" target="_blank" style="color: #FFEA00;">medium</a> |
+            <a href="https://www.linkedin.com/in/hruday-gurijala-61b472248/" target="_blank"
+                style="color: #FFEA00;">linkedin</a> |
+            <a href="https://x.com/hrudaygg" target="_blank" style="color: #FFEA00;">twitter</a> |
+            <a href="https://buymeacoffee.com/gurijalahrk" target="_blank" style="color: #FFEA00;">biryani</a>
+        </div>
+        <footer style="text-align: center; font-size: 14px; color:#d3d3d3;">
+            &copy; 2024 Design and crafted by Hruday Gurijala
+        </footer>
 
-    <script src="assets/js/ambient-bg.js"></script>
+        <script src="assets/js/ambient-bg.js"></script>
 </body>
 
 </html>
