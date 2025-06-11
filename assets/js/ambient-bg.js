@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let particles = [];
     const particleCount = 100;
     const particleColor = '#FFEA00';
-    const particleSize = 1.5;
+    const particleSize = 2;
     const particleSpeed = 0.3;
     const connectionDistance = 150;
 

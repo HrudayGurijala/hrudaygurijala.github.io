@@ -1066,7 +1066,7 @@ body {
 }
 
 .research-title a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: aqua;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -1078,7 +1078,7 @@ body {
 }
 
 .research-description {
-    font-size: 0.7rem;
+    font-size:1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
