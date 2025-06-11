@@ -2,10 +2,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "VT323", sans-serif;
-    font-weight: 400;
+    /* font-family: "Alumni Sans Pinstripe", sans-serif; */
+    /* font-family: "Darker Grotesque", sans-serif; */
+    font-family: "Darker Grotesque", sans-serif;
+    /* font-family: "Jura", sans-serif; */
+    font-weight: 500;
     font-style: normal;
-    font-size: clamp(16px, 2vw, 30px);
+    font-size: clamp(16px, 2vw, 25px);
 }
 
 html {
@@ -14,7 +17,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'VT323', monospace;
+    font-family: 'Darker Grotesque', monospace;
     color: #ffffff;
     min-height: 100vh;
     display: flex;
@@ -32,14 +35,6 @@ body {
     scrollbar-color: #888 #f1f1f1;
 }
 
-body.light-mode::before {
-    opacity: 0.3;
-    /* Reduces the intensity in light mode */
-}
-
-/* body.light-mode {
-    color: #000000;
-}  */
 
 .navbar {
     position: sticky;
@@ -91,7 +86,6 @@ body.light-mode::before {
 }
 
 .cards:hover {
-    transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(255, 234, 0, 0.5);
 }
 
@@ -203,15 +197,15 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
-    max-width: 200px;
+    /* padding: 15px; */
+    max-width: 250px;
     width: 100%;
 }
 
 .flip-card {
     background-color: transparent;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     perspective: 1000px;
     transform: rotate(7deg);
 }
@@ -250,19 +244,9 @@ h1 {
     border-radius: 10px;
 }
 
-/* Layout Styles */
-.body {
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
 
 .about {
     flex: 1;
-    margin: 20px;
 }
 
 .section {
@@ -450,23 +434,6 @@ h1 {
     text-align: center;
 }
 
-/* Dark/Light mode specific styles */
-body.light-mode .navbar {
-    /* background-color: #ffffff; */
-    background-color: rgba(255, 255, 255, 0.6);
-}
-
-body.light-mode .dark-mode-toggle {
-    background-color: #ffffff;
-    border: #ffffff;
-}
-
-body.light-mode .cards {
-    background: rgba(0, 0, 0, 0.02);
-    border-color: rgba(255, 234, 0, 0.5);
-}
-
-/* Keep the existing body styles */
 .body {
     padding: 20px;
     flex: 1;
@@ -481,7 +448,7 @@ body.light-mode .cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 15px;
     max-width: 350px;
     width: 100%;
 }
@@ -636,7 +603,7 @@ body.light-mode .cards {
     border: 1px solid rgba(255, 234, 0, 0.3);
     border-radius: 8px;
     color: #ffffff;
-    font-family: 'VT323', monospace;
+    font-family: 'Darker Grotesque', monospace;
     font-size: 1.2rem;
 }
 
@@ -652,7 +619,7 @@ body.light-mode .cards {
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    font-family: 'VT323', monospace;
+    font-family: 'Darker Grotesque', monospace;
     font-size: 1.2rem;
     transition: all 0.3s ease;
 }
@@ -744,26 +711,6 @@ body.light-mode .cards {
     }
 }
 
-/* Dark/Light mode specific styles */
-body.light-mode .contact-form-container,
-body.light-mode .info-card {
-    background: rgba(0, 0, 0, 0.05);
-}
-
-body.light-mode .form-group input,
-body.light-mode .form-group select,
-body.light-mode .form-group textarea {
-    background: rgba(0, 0, 0, 0.1);
-    color: #000000;
-}
-
-body.light-mode .social-link {
-    background: rgba(0, 0, 0, 0.1);
-}
-
-body.light-mode .info-card a {
-    color: #000000;
-}
 
 /* For WebKit Browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
@@ -916,7 +863,7 @@ body {
     border: none;
     border-bottom: 1px solid rgba(255, 234, 0, 0.3);
     color: #ffffff;
-    font-family: 'VT323', monospace;
+    font-family: 'Darker Grotesque', monospace;
     font-size: 0.9rem;
     /* Changed from 1.1rem */
     transition: all 0.3s ease;
@@ -956,7 +903,7 @@ body {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-family: 'VT323', monospace;
+    font-family: 'Darker Grotesque', monospace;
     font-size: 0.9rem;
     /* Changed from 1.1rem */
     transition: all 0.3s ease;
@@ -1059,16 +1006,16 @@ body {
     }
 }
 
-.card-tags {
+.card-tags-tech {
     display: inline-flex;
-    gap: 0.3rem;
+    gap: 1rem;
+    padding-right: 1rem;
 }
 
 .tag {
     display: flex;
     align-items: center;
     gap: 5px;
-    padding: 0.5rem;
     border-radius: 5px;
     white-space: nowrap;
 }
@@ -1080,4 +1027,125 @@ body {
 
 .skill-name {
     font-size: 1rem;
+    padding-bottom: 0.25rem;
+}
+
+.section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 234, 0, 0.3), transparent);
+    margin: 2rem 0;
+}
+
+.research {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1400px;
+}
+
+.research h1 {
+    font-size: 2rem;
+    color: #FFEA00;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.research-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.research-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.research-title {
+    margin-bottom: 1.5rem;
+}
+
+.research-title a {
+    font-size: 0.9rem;
+    color: aqua;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.research-title a:hover {
+    color: #FFEA00;
+    text-decoration: underline;
+}
+
+.research-description {
+    font-size: 0.7rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.research-tags .tag {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 16px;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+}
+
+.research-tags .tag:hover {
+    background: rgba(255, 234, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.research-image {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 234, 0, 0.3);
+    transition: transform 0.5s ease;
+}
+
+.research-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 968px) {
+    .research-item {
+        flex-direction: column;
+    }
+
+    .research-text {
+        padding-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .research h1 {
+        font-size: 2.4rem;
+    }
+
+    .research-title a {
+        font-size: 1.6rem;
+    }
+
+    .research-description {
+        font-size: 1.3rem;
+    }
+
+    .research-tags .tag {
+        font-size: 1rem;
+    }
 }

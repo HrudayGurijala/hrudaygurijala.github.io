@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Darker+Grotesque:wght@300..900&family=Jura:wght@300..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/ambient-bg.css">
@@ -169,11 +175,11 @@
     <div class="body">
         <div class="about">
             <div style=" color: #f7f7f7;">
-                <p style="margin: 0 0 0.5rem 0;">
+                <p>
                     Hey there! I’m a developer from Hyderabad, India, passionate about building meaningful tech.
                     Most of my work is focused on software, automation and embedded domains.</p>
 
-                <h2 style="color:rgb(173, 255, 47); font-size: 1.1rem; margin: 0 0 0.5rem 0;">What I do?</h2>
+                <h2 style="color:rgb(173, 255, 47); font-size: 1.1rem; margin: 0.5rem 0;">What I do?</h2>
                 <p>
                     I’ve <span style="color: #ffea00; ">interned at startup</span> and <span style="color: #ffea00; ">2
                         freelance projects </span>delivered to happy clients.
@@ -191,7 +197,7 @@
 
 
 
-            <div class="section" style=" margin-top:0.5rem;">
+            <div class="section" style=" margin-top:0.5rem">
                 check out my <a href="/projects.html" class="star-link projects-link"
                     style="--random-delay: 0.2">projects</a> |
                 <a href="/articles.html" class="star-link articles-link" style="--random-delay: 1.5">articles</a>
@@ -226,10 +232,10 @@
     </div>
 
 
-    <div class="section" style="overflow: hidden;white-space: nowrap;margin: 0 2.5rem;">
-        <p class="tech-stack-title">tech stack</p>
+    <div class="section" style="overflow: hidden;white-space: nowrap;margin: 0 3rem;">
+        <p class="tech-stack-title">Tech stack</p>
         <div class="marquee-container">
-            <div class="card-tags" style="display: inline-flex;">
+            <div class="card-tags-tech" style="display: inline-flex;">
                 <div class="tag">
                     <img class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -367,7 +373,7 @@
                 </div>
             </div>
             <!-- Duplicate for seamless loop -->
-            <div class="card-tags" style="display: inline-flex; gap: 0.7rem;">
+            <div class="card-tags-tech" style="display: inline-flex; gap: 0.7rem;">
                 <div class="tag">
                     <img class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -604,6 +610,7 @@
     <div class="section-divider"></div>
 
     <!-- Articles Section -->
+    <!-- Articles Section -->
     <div style="margin: 0 1rem">
         <div class="section-header">
             <h1>My articles</h1>
@@ -619,8 +626,10 @@
                     <div class="card-title">
                         <h3>Cryptography concepts for developers</h3>
                     </div>
-                    <p>Useful cryptography concepts for developers and the evolution of cryptography along the history
-                        in software development.</p>
+                    <div class="card-description">
+                        <p>Useful cryptography concepts for developers and the evolution of cryptography along the
+                            history in software development.</p>
+                    </div>
                     <div class="card-tags">
                         <p class="tag">Cryptography</p>
                         <p class="tag">Hash</p>
@@ -643,7 +652,9 @@
                     <div class="card-title">
                         <h3>Why are there different file formats for digital images?</h3>
                     </div>
-                    <p>5 minute read on history of digital images and how an image file is transferred.</p>
+                    <div class="card-description">
+                        <p>5 minute read on history of digital images and how an image file is transferred.</p>
+                    </div>
                     <div class="card-tags">
                         <p class="tag">digital images</p>
                         <p class="tag">image files</p>
@@ -666,7 +677,9 @@
                     <div class="card-title">
                         <h3>Journey of a HTTP request — A Deep dive.</h3>
                     </div>
-                    <p>Ever wondered how a HTTP request gets served to your browser within few seconds.</p>
+                    <div class="card-description">
+                        <p>Ever wondered how a HTTP request gets served to your browser within few seconds.</p>
+                    </div>
                     <div class="card-tags">
                         <p class="tag">HTTP protocol</p>
                         <p class="tag">development</p>

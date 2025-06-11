@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = canvas.getContext('2d');
     let width, height;
     let particles = [];
-    const particleCount = 150;
+    const particleCount = 100;
     const particleColor = '#FFEA00';
     const particleSize = 1.5;
     const particleSpeed = 0.3;
-    const connectionDistance = 120;
+    const connectionDistance = 150;
 
     function resize() {
         width = canvas.width = window.innerWidth;
