@@ -104,9 +104,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.cards:hover .card-image img {
-    transform: scale(1.05);
-}
+
 
 .card-content {
     padding: 20px;
@@ -175,7 +173,7 @@ h1 {
 .card-buttons button {
     background-color: #FFEA00;
     padding: 8px 25px;
-    border-radius: 25px;
+    border-radius: 12px;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -617,7 +615,7 @@ h1 {
     color: #000000;
     padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 25px;
+    border-radius: 12px;
     cursor: pointer;
     font-family: 'Darker Grotesque', monospace;
     font-size: 1.2rem;
@@ -625,7 +623,6 @@ h1 {
 }
 
 .submit-btn:hover {
-    transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 234, 0, 0.5);
 }
 
@@ -681,14 +678,14 @@ h1 {
     background-color: #FFEA00;
     color: #000000 !important;
     padding: 0.2rem 1.5rem;
-    border-radius: 25px;
+    margin-left: 10px;
+    border-radius: 12px;
     text-align: center;
     transition: all 0.3s ease;
     text-decoration: none;
 }
 
 .support-btn:hover {
-    transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 234, 0, 0.3);
 }
 
@@ -901,7 +898,7 @@ body {
     padding: 0.4rem 1rem;
     /* Changed from 0.6rem 1.2rem */
     border: none;
-    border-radius: 20px;
+    border-radius: 12px;
     cursor: pointer;
     font-family: 'Darker Grotesque', monospace;
     font-size: 0.9rem;
@@ -911,7 +908,6 @@ body {
 }
 
 .submit-btn:hover {
-    transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 234, 0, 0.5);
 }
 
@@ -1094,7 +1090,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     padding: 0.4rem 0.8rem;
-    border-radius: 16px;
+    border-radius: 12px;
     font-size: 0.7rem;
     transition: all 0.3s ease;
 }
