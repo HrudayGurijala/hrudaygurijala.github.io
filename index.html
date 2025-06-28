@@ -2,44 +2,136 @@
 <html lang="en">
 
 <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
+    <!-- SEO Meta Tags -->
+    <title>Hruday Gurijala</title>
+    <meta name="description"
+        content="Hruday Gurijala is a software engineer from Hyderabad specializing in full-stack development, automation, and embedded systems. View projects in React, Node.js, golang, and more.">
+    <meta name="keywords"
+        content="Hruday Gurijala, software engineer, full stack developer, React developer, Node.js, go lang, embedded systems, automation, Hyderabad developer, freelance developer">
+    <meta name="author" content="Hruday Gurijala">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags (Social Media) -->
+    <meta property="og:title" content="Hruday Gurijala">
+    <meta property="og:description"
+        content="Software engineer from Hyderabad specializing in full-stack development, automation, and embedded systems. Open to freelance work and internships.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hruday.is-a.dev">
+    <meta property="og:image" content="https://hruday.is-a.dev/assets/site-preview.png">
+    <meta property="og:site_name" content="Hruday Gurijala Portfolio">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hruday Gurijala">
+    <meta name="twitter:description"
+        content="Software engineer from Hyderabad specializing in full-stack development, automation, and embedded systems.">
+    <meta name="twitter:image" content="https://hruday.is-a.dev/assets/site-preview.png">
+    <meta name="twitter:creator" content="@hrudaygg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hruday.is-a.dev">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Hruday Gurijala",
+        "jobTitle": "Software Engineer",
+        "description": "Software engineer from Hyderabad specializing in full-stack development, automation, and embedded systems",
+        "url": "https://hruday.is-a.dev",
+        "image": "https://hruday.is-a.dev/assets/hruday.png",
+        "sameAs": [
+            "https://github.com/HrudayGurijala",
+            "https://medium.com/@gurijalahruday",
+            "https://www.linkedin.com/in/hruday-gurijala-61b472248",
+            "https://x.com/hrudaygg",
+            "https://leetcode.com/u/HrudayGurijala",
+            "https://codeforces.com/profile/hrudaygg"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Hyderabad",
+            "addressRegion": "Telangana",
+            "addressCountry": "India"
+        },
+        "knowsAbout": [
+            "JavaScript",
+            "TypeScript",
+            "Go",
+            "React.js",
+            "Node.js",
+            "Full Stack Development",
+            "Automation",
+            "Embedded Systems",
+            "Machine Learning",
+            "Web Development"
+        ],
+        "email": "gurijalahruday@gmail.com",
+        "alumniOf": "IIIT Sri City",
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Software Engineer",
+            "occupationLocation": {
+                "@type": "City",
+                "name": "Hyderabad"
+            }
+        }
+    }
+    </script>
+
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Darker+Grotesque:wght@300..900&family=Jura:wght@300..700&display=swap"
         rel="stylesheet">
+
+    <!-- Icons and Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/assets/css/ambient-bg.css">
+
+    <!-- Favicon -->
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>">
-    <title>hruday.</title>
+
+    <!-- Additional SEO Tags -->
+    <meta name="theme-color" content="#FFEA00">
+    <meta name="msapplication-TileColor" content="#FFEA00">
+
+    <!-- Sitemap Reference -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 </head>
 <style>
-/* Mobile styles only */
-@media (max-width: 768px) {
-    .section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
+    /* Mobile styles only */
+    @media (max-width: 768px) {
+        .section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.5rem;
+        }
     }
-    
-    .links-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 0.5rem;
-    }
-}</style>
+</style>
 
 <body>
     <!-- Ambient Background Canvas -->
@@ -85,25 +177,25 @@
             </div>
 
 
-<div class="section" style="margin-top:0.5rem">
-    check out my <a href="/projects.html" class="star-link projects-link"
-        style="--random-delay: 0.2">projects</a> |
-    <a href="/articles.html" class="star-link articles-link" style="--random-delay: 1.5">articles</a>
-</div>
+            <div class="section" style="margin-top:0.5rem">
+                check out my <a href="projects" class="star-link projects-link" style="--random-delay: 0.2">projects</a>
+                |
+                <a href="articles" class="star-link articles-link" style="--random-delay: 1.5">articles</a>
+            </div>
 
-<div class="section" style="margin-bottom: 0;">
-    <div>know more about me.</div>
-    <div class="links-container">
-        <a href="https://drive.google.com/file/d/1HcD0pKnGyK_5XUhvWXsGpqHpHE_IjP5P/view?usp=sharing"
-            target="_blank" class="star-link resume-link" style="--random-delay: 2.8">resume</a> |
-        <a href="https://github.com/HrudayGurijala" target="_blank" class="star-link github-link"
-            style="--random-delay: 1.7">github</a> |
-        <a href="https://leetcode.com/u/HrudayGurijala/" target="_blank" class="star-link leetcode-link"
-            style="--random-delay: 3.3">leetcode</a> |
-        <a href="https://codeforces.com/profile/hrudaygg" target="_blank" class="star-link leetcode-link"
-            style="--random-delay: 3.3">codeforces</a>
-    </div>
-</div>
+            <div class="section" style="margin-bottom: 0;">
+                <div>know more about me.</div>
+                <div class="links-container">
+                    <a href="https://drive.google.com/file/d/1HcD0pKnGyK_5XUhvWXsGpqHpHE_IjP5P/view?usp=sharing"
+                        target="_blank" class="star-link resume-link" style="--random-delay: 2.8">resume</a> |
+                    <a href="https://github.com/HrudayGurijala" target="_blank" class="star-link github-link"
+                        style="--random-delay: 1.7">github</a> |
+                    <a href="https://leetcode.com/u/HrudayGurijala/" target="_blank" class="star-link leetcode-link"
+                        style="--random-delay: 3.3">leetcode</a> |
+                    <a href="https://codeforces.com/profile/hrudaygg" target="_blank" class="star-link leetcode-link"
+                        style="--random-delay: 3.3">codeforces</a>
+                </div>
+            </div>
         </div>
 
         <!-- Flipping image container -->
@@ -111,10 +203,10 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="image" src="/assets/hruday.png" alt="Image 1">
+                        <img loading="lazy" class="image" src="/assets/hruday.png" alt="Image 1">
                     </div>
                     <div class="flip-card-back">
-                        <img class="image" src="/assets/flip-image.png" alt="Image 2">
+                        <img loading="lazy" class="image" src="/assets/flip-image.png" alt="Image 2">
                     </div>
                 </div>
             </div>
@@ -127,136 +219,137 @@
         <div class="marquee-container">
             <div class="card-tags-tech" style="display: inline-flex;">
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                         alt="JavaScript">
                     <span class="skill-name">JavaScript</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                         alt="TypeScript">
                     <span class="skill-name">TypeScript</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                         alt="Python">
                     <span class="skill-name">Python</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
                         alt="C++">
                     <span class="skill-name">C++</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
-                        alt="Go">
+                    <img loading="lazy" class="skill-logo"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go">
                     <span class="skill-name">Go</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
                     <span class="skill-name">React.js</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                         alt="React Native">
                     <span class="skill-name">React Native</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
                         alt="Bootstrap">
                     <span class="skill-name">Bootstrap</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="EJS">
                     <span class="skill-name">EJS</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
                         alt="TensorFlow">
                     <span class="skill-name">TensorFlow</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras">
                     <span class="skill-name">Keras</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
                         alt="OpenCV">
                     <span class="skill-name">OpenCV</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                         alt="Node.js">
                     <span class="skill-name">Node.js</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
                         alt="FastAPI">
                     <span class="skill-name">FastAPI</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
                     <span class="skill-name">HTML</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
                     <span class="skill-name">CSS</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                         alt="MongoDB">
                     <span class="skill-name">MongoDB</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
                     <span class="skill-name">MySQL</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
                         alt="PostgreSQL">
                     <span class="skill-name">PostgreSQL</span>
                 </div>
                 <div class="tag">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                    <img loading="lazy"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
                         height="19px" alt="AWS">
                     <span class="skill-name">AWS</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
                         alt="Docker">
                     <span class="skill-name">Docker</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
                     <span class="skill-name">Git</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                         alt="GitHub">
                     <span class="skill-name">GitHub</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
                         alt="Selenium">
                     <span class="skill-name">Selenium</span>
@@ -265,136 +358,137 @@
             <!-- Duplicate for seamless loop -->
             <div class="card-tags-tech" style="display: inline-flex; gap: 0.7rem;">
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                         alt="JavaScript">
                     <span class="skill-name">JavaScript</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                         alt="TypeScript">
                     <span class="skill-name">TypeScript</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                         alt="Python">
                     <span class="skill-name">Python</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
                         alt="C++">
                     <span class="skill-name">C++</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
-                        alt="Go">
+                    <img loading="lazy" class="skill-logo"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go">
                     <span class="skill-name">Go</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
                     <span class="skill-name">React.js</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                         alt="React Native">
                     <span class="skill-name">React Native</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
                         alt="Bootstrap">
                     <span class="skill-name">Bootstrap</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="EJS">
                     <span class="skill-name">EJS</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
                         alt="TensorFlow">
                     <span class="skill-name">TensorFlow</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras">
                     <span class="skill-name">Keras</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
                         alt="OpenCV">
                     <span class="skill-name">OpenCV</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                         alt="Node.js">
                     <span class="skill-name">Node.js</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
                         alt="FastAPI">
                     <span class="skill-name">FastAPI</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
                     <span class="skill-name">HTML</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
                     <span class="skill-name">CSS</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                         alt="MongoDB">
                     <span class="skill-name">MongoDB</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
                     <span class="skill-name">MySQL</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
                         alt="PostgreSQL">
                     <span class="skill-name">PostgreSQL</span>
                 </div>
                 <div class="tag">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                    <img loading="lazy"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
                         height="19px" alt="AWS">
                     <span class="skill-name">AWS</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
                         alt="Docker">
                     <span class="skill-name">Docker</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
                     <span class="skill-name">Git</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                         alt="GitHub">
                     <span class="skill-name">GitHub</span>
                 </div>
                 <div class="tag">
-                    <img class="skill-logo"
+                    <img loading="lazy" class="skill-logo"
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
                         alt="Selenium">
                     <span class="skill-name">Selenium</span>
@@ -416,7 +510,7 @@
             <!-- code it -->
             <div class="cards">
                 <div class="card-image">
-                    <img src="/assets/project6.png" alt="Code It Project">
+                    <img loading="lazy" src="/assets/project6.png" alt="Code It Project">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
@@ -443,7 +537,7 @@
             <!-- learnflow -->
             <div class="cards">
                 <div class="card-image">
-                    <img src="/assets/project5.png" alt="Learnflow Project">
+                    <img loading="lazy" src="/assets/project5.png" alt="Learnflow Project">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
@@ -469,7 +563,7 @@
             <!-- smart classroom -->
             <div class="cards">
                 <div class="card-image">
-                    <img src="/assets/project10.png" alt="Smart Classroom Project">
+                    <img loading="lazy" src="/assets/project10.png" alt="Smart Classroom Project">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
@@ -510,14 +604,15 @@
             <!-- autogit Article -->
             <div class="cards">
                 <div class="card-image">
-                    <img src="/assets/article5.png" alt="Cryptography Article">
+                    <img loading="lazy" src="/assets/article5.png" alt="Cryptography Article">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
                         <h3>Track your coding journey with AutoGit</h3>
                     </div>
                     <div class="card-description">
-                        <p>AutoGit is a VS Code tool that checks your file changes and updates your GitHub graph, showing your real work and keeping you motivated.</p>
+                        <p>AutoGit is a VS Code tool that checks your file changes and updates your GitHub graph,
+                            showing your real work and keeping you motivated.</p>
                     </div>
                     <div class="card-tags">
                         <p class="tag">VS Code Extension</p>
@@ -535,7 +630,7 @@
             <!-- Image Formats Article -->
             <div class="cards">
                 <div class="card-image">
-                    <img src="/assets/article2.webp" alt="Image Formats Article">
+                    <img loading="lazy" src="/assets/article2.webp" alt="Image Formats Article">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
@@ -560,7 +655,7 @@
             <!-- HTTP Article -->
             <div class="cards">
                 <div class="card-image">
-                    <img src="/assets/article1.webp" alt="HTTP Article">
+                    <img loading="lazy" src="/assets/article1.webp" alt="HTTP Article">
                 </div>
                 <div class="card-content">
                     <div class="card-title">
