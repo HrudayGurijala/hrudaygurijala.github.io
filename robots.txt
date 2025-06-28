@@ -1,0 +1,38 @@
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Block access to system files and directories
+Disallow: /assets/temp/
+Disallow: /.git/
+
+# Block crawling of duplicate content or test pages
+# Disallow: /test/
+# Disallow: /backup/
+
+# Allow crawling of CSS, JS, and image files (important for SEO)
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/*.png
+Allow: /assets/*.jpg
+Allow: /assets/*.jpeg
+Allow: /assets/*.webp
+Allow: /assets/*.svg
+Allow: /style.css
+
+# Specific rules for major search engines
+
+# Google Bot - Allow everything
+User-agent: Googlebot
+Allow: /
+
+# Bing Bot - Allow everything  
+User-agent: Bingbot
+Allow: /
+
+
+# Crawl delay (optional - use if server is slow)
+# Crawl-delay: 1
+
+# Sitemap location 
+Sitemap: https://hruday.is-a.dev/sitemap.xml
