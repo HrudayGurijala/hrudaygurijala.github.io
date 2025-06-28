@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = canvas.getContext('2d');
     let width, height;
     let particles = [];
-    const particleCount = 100;
+    const particleCount = 70;
     const particleColor = '#FFEA00';
     const particleSize = 2;
     const particleSpeed = 0.3;

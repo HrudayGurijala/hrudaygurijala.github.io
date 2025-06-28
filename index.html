@@ -19,23 +19,27 @@
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>">
     <title>hruday.</title>
-    <style>
-        /* Project Card Enhancements */
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin: 0 1rem;
-        }
-
-        /* Section Dividers */
-        .section-divider {
-            height: 1px;
-            background: linear-gradient(to right, transparent, rgba(255, 234, 0, 0.3), transparent);
-            margin: 0.5rem 0;
-        }
-    </style>
 </head>
+<style>
+/* Mobile styles only */
+@media (max-width: 768px) {
+    .section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .links-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}</style>
 
 <body>
     <!-- Ambient Background Canvas -->
@@ -81,24 +85,25 @@
             </div>
 
 
+<div class="section" style="margin-top:0.5rem">
+    check out my <a href="/projects.html" class="star-link projects-link"
+        style="--random-delay: 0.2">projects</a> |
+    <a href="/articles.html" class="star-link articles-link" style="--random-delay: 1.5">articles</a>
+</div>
 
-            <div class="section" style=" margin-top:0.5rem">
-                check out my <a href="/projects.html" class="star-link projects-link"
-                    style="--random-delay: 0.2">projects</a> |
-                <a href="/articles.html" class="star-link articles-link" style="--random-delay: 1.5">articles</a>
-            </div>
-
-            <div class="section" style="margin-bottom: 0;">
-                <div>know more about me.</div>
-                <a href="https://drive.google.com/file/d/1HcD0pKnGyK_5XUhvWXsGpqHpHE_IjP5P/view?usp=sharing"
-                    target="_blank" class="star-link resume-link" style="--random-delay: 2.8">resume</a> |
-                <a href="https://github.com/HrudayGurijala" target="_blank" class="star-link github-link"
-                    style="--random-delay: 1.7">github</a> |
-                <a href="https://leetcode.com/u/HrudayGurijala/" target="_blank" class="star-link leetcode-link"
-                    style="--random-delay: 3.3">leetcode</a> |
-                <a href="https://codeforces.com/profile/hrudaygg" target="_blank" class="star-link leetcode-link"
-                    style="--random-delay: 3.3">codeforces</a>
-            </div>
+<div class="section" style="margin-bottom: 0;">
+    <div>know more about me.</div>
+    <div class="links-container">
+        <a href="https://drive.google.com/file/d/1HcD0pKnGyK_5XUhvWXsGpqHpHE_IjP5P/view?usp=sharing"
+            target="_blank" class="star-link resume-link" style="--random-delay: 2.8">resume</a> |
+        <a href="https://github.com/HrudayGurijala" target="_blank" class="star-link github-link"
+            style="--random-delay: 1.7">github</a> |
+        <a href="https://leetcode.com/u/HrudayGurijala/" target="_blank" class="star-link leetcode-link"
+            style="--random-delay: 3.3">leetcode</a> |
+        <a href="https://codeforces.com/profile/hrudaygg" target="_blank" class="star-link leetcode-link"
+            style="--random-delay: 3.3">codeforces</a>
+    </div>
+</div>
         </div>
 
         <!-- Flipping image container -->
