@@ -18,14 +18,15 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/assets/css/ambient-bg.css">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>">
+    <!-- <link rel="stylesheet" href="/assets/css/ambient-bg.css"> -->
     <title>Articles - hruday.</title>
+        <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
 </head>
 
 <body>
-    <canvas id="ambient-bg"></canvas>
+    <!-- <canvas id="ambient-bg"></canvas> -->
+    <canvas id="topo-bg"></canvas>
 
     <div class="navbar">
         <div class="intro">
@@ -38,117 +39,13 @@
             <a href="../projects" class="contact" style="color: #FFEA00;">projects</a>
             <a href="../research" class="contact" style="color: #FFEA00;">research</a>
             <a href="../articles" class="contact" style="color: #FFEA00;">articles</a>
-            </div>
+        </div>
     </div>
 
     <div class="project">
         <h1>My Articles</h1>
-        <div class="card-container">
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/article5.png" alt="Cryptography Article">
-                </div>
-                <div class="card-content">
-                    <h3>Track your coding journey with AutoGit</h3>
-                    <div class="card-tags">
-                        <p class="tag">#VS Code Extension</p>
-                        <p class="tag">#GitHub</p>
-                        <p class="tag">#Progress</p>
-                    </div>
-                    <p>AutoGit is a VS Code tool that checks your file changes and updates your GitHub graph,
-                        showing your real work and keeping you motivated.</p>
-                    <div class="card-buttons">
-                        <button><a
-                                href="https://medium.com/@gurijalahruday/track-your-coding-journey-with-autogit-d2ba0422ca6d"
-                                target="_blank">read article</a></button>
-                    </div>
-                </div>
+        <div class="card-container" id="articles-container">
             </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/article4.webp" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Cryptography concepts for developers</h3>
-                    <div class="card-tags">
-                        <p class="tag">#Cryptography</p>
-                        <p class="tag">#Hash</p>
-                        <p class="tag">#Encryption</p>
-                    </div>
-                    <p>Useful cryptography concepts for developers and the evolution of cryptography along the
-                        history in software development.</p>
-                    <div class="card-buttons">
-                        <button><a
-                                href="https://medium.com/@gurijalahruday/cryptography-concepts-for-developers-a90de71e384e"
-                                target="_blank" style="color: black;">read article</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/article3.webp" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>How git works?</h3>
-                    <div class="card-tags">
-                        <p class="tag">#git</p>
-                        <p class="tag">#github</p>
-                        <p class="tag">#data</p>
-                    </div>
-                    <p>GitHub is a platform for code collaboration, version control, hosting.3 minute read on how
-                        git works behind the hood and how data is stored in github.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://medium.com/@gurijalahruday/how-git-works-28a70963bb51" target="_blank"
-                                style="color: black;">read article</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/article2.webp" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Why are there different file formats for digital images?</h3>
-                    <div class="card-tags">
-                        <p class="tag">#digital images</p>
-                        <p class="tag">#image files</p>
-                        <p class="tag">#file transfer</p>
-                    </div>
-                    <p>5 minute read on history of digital images and how an image file is transferred.</p>
-                    <div class="card-buttons">
-                        <button><a
-                                href="https://medium.com/@gurijalahruday/why-there-are-different-file-formats-for-digital-images-8841e9852ce0"
-                                target="_blank" style="color: black;">read article</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/article1.webp" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Journey of a HTTP request — A Deep dive.</h3>
-                    <div class="card-tags">
-                        <p class="tag">#HTTP protocol</p>
-                        <p class="tag">#Web development</p>
-                        <p class="tag">#DOM</p>
-                    </div>
-                    <p>5 minute read on how http request gets served on your browser.</p>
-                    <div class="card-buttons">
-                        <button><a
-                                href="https://medium.com/@gurijalahruday/journey-of-a-http-request-a-deep-dive-98d7841abb5e"
-                                target="_blank" style="color: black;">read article</a></button>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
     </div>
 
     <div class="footer">
@@ -163,7 +60,78 @@
         &copy; 2024 Design and crafted by Hruday Gurijala
     </footer>
 
-    <script src="/assets/js/ambient-bg.js"></script>
+    <!-- <script src="/assets/js/ambient-bg.js"></script> -->
+            <script src="/assets/js/topo-map.js"></script>
+
+    <script>
+        const articles = [
+            {
+                image: "/assets/article5.png",
+                title: "Track your coding journey with AutoGit",
+                tags: ["#VS Code Extension", "#GitHub", "#Progress"],
+                description: "AutoGit is a VS Code tool that checks your file changes and updates your GitHub graph, showing your real work and keeping you motivated.",
+                link: "https://medium.com/@gurijalahruday/track-your-coding-journey-with-autogit-d2ba0422ca6d"
+            },
+            {
+                image: "/assets/article4.webp",
+                title: "Cryptography concepts for developers",
+                tags: ["#Cryptography", "#Hash", "#Encryption"],
+                description: "Useful cryptography concepts for developers and the evolution of cryptography along the history in software development.",
+                link: "https://medium.com/@gurijalahruday/cryptography-concepts-for-developers-a90de71e384e"
+            },
+            {
+                image: "/assets/article3.webp",
+                title: "How git works?",
+                tags: ["#git", "#github", "#data"],
+                description: "GitHub is a platform for code collaboration, version control, hosting. 3-minute read on how git works behind the hood and how data is stored in GitHub.",
+                link: "https://medium.com/@gurijalahruday/how-git-works-28a70963bb51"
+            },
+            {
+                image: "/assets/article2.webp",
+                title: "Why are there different file formats for digital images?",
+                tags: ["#digital images", "#image files", "#file transfer"],
+                description: "5-minute read on the history of digital images and how an image file is transferred.",
+                link: "https://medium.com/@gurijalahruday/why-there-are-different-file-formats-for-digital-images-8841e9852ce0"
+            },
+            {
+                image: "/assets/article1.webp",
+                title: "Journey of a HTTP request — A Deep dive.",
+                tags: ["#HTTP protocol", "#Web development", "#DOM"],
+                description: "5-minute read on how an HTTP request gets served on your browser.",
+                link: "https://medium.com/@gurijalahruday/journey-of-a-http-request-a-deep-dive-98d7841abb5e"
+            }
+        ];
+
+        function createArticleCard(article) {
+            const card = document.createElement('div');
+            card.classList.add('cards');
+
+            card.innerHTML = `
+                <div class="card-image">
+                    <img loading="lazy" src="${article.image}" alt="${article.title}">
+                </div>
+                <div class="card-content">
+                    <h3>${article.title}</h3>
+                    <div class="card-tags">
+                        ${article.tags.map(tag => `<p class="tag">${tag}</p>`).join('')}
+                    </div>
+                    <p>${article.description}</p>
+                    <div class="card-buttons">
+                        <button><a href="${article.link}" target="_blank" style="color: black;">read article</a></button>
+                    </div>
+                </div>
+            `;
+            return card;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const articlesContainer = document.getElementById('articles-container');
+
+            articles.forEach(article => {
+                articlesContainer.appendChild(createArticleCard(article));
+            });
+        });
+    </script>
 </body>
 
 </html>

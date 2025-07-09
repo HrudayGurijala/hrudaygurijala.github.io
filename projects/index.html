@@ -18,10 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=sysllet" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/assets/css/ambient-bg.css">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>">
+    <!-- <link rel="stylesheet" href="/assets/css/ambient-bg.css"> -->
     <title>Projects - hruday.</title>
+        <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     <style>
         .section-divider {
@@ -33,7 +32,8 @@
 </head>
 
 <body>
-    <canvas id="ambient-bg"></canvas>
+    <!-- <canvas id="ambient-bg"></canvas> -->
+    <canvas id="topo-bg"></canvas>
 
     <div class="navbar">
         <div class="intro">
@@ -46,416 +46,19 @@
             <a href="../projects" class="contact" style="color: #FFEA00;">projects</a>
             <a href="../research" class="contact" style="color: #FFEA00;">research</a>
             <a href="../articles" class="contact" style="color: #FFEA00;">articles</a>
-            </div>
+        </div>
     </div>
 
     <div class="project">
         <h1>Top Projects</h1>
-        <div class="card-container">
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project10.png" alt="Smart Classroom Project">
-                </div>
-                <div class="card-content">
-                    <h3>Smart classroom</h3>
-                    <div class="card-tags">
-                        <p class="tag">#raspberry pi</p>
-                        <p class="tag">#opencv</p>
-                        <p class="tag">#react</p>
-                        <p class="tag">#fastapi</p>
-                    </div>
-                    <p>Detect people and get sensors values from raspberry pi and give insights on reactapplication.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/smart_classroom"
-                                target="_blank">github</a></button>
-                        <button><a
-                                href="https://drive.google.com/file/d/12-9apaXynG9jHmUM19z8SlYv6QAdIHi8/view?usp=sharing"
-                                target="_blank">demo</a></button>
-                    </div>
-                </div>
+        <div class="card-container" id="top-projects-container">
             </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project6.png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Code it</h3>
-                    <div class="card-tags">
-                        <p class="tag">#node.js</p>
-                        <p class="tag">#express.js</p>
-                        <p class="tag">#NLP</p>
-                        <p class="tag">#selenium</p>
-                    </div>
-                    <p>Search engine to search problems from different coding platforms like leetcode, gfg and
-                        interviewbit etc.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/Code-It-main" target="_blank"
-                                style="color: black;">github</a></button>
-                        <button><a href="https://code-it-main.onrender.com" target="_blank"
-                                style="color: black;">live</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project5.png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Learnflow</h3>
-                    <div class="card-tags">
-                        <p class="tag">#node.js</p>
-                        <p class="tag">#express.js</p>
-                        <p class="tag">#mongodb</p>
-                        <p class="tag">#AWS</p>
-                    </div>
-                    <p>Platform where users can create, share, and view video posts, comment on posts and like.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/learnflow" target="_blank"
-                                style="color: black;">github</a></button>
-                        <button><a href="https://learnflow-ibb1.onrender.com" target="_blank"
-                                style="color: black;">live</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="section-divider"></div>
 
         <h1>Other Projects</h1>
-        <div class="card-container">
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project18.png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Research paper summarizer</h3>
-                    <div class="card-tags">
-                        <p class="tag">#react-native</p>
-                        <p class="tag">#typescript</p>
-                    </div>
-                    <p>A multi-agent system for finding, analyzing, and summarizing research papers from various
-                        sources, organizing them by topic, and generating audio podcasts discussing the findings.
-                    </p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/research-paper-summarization" target="_blank"
-                                style="color: black;">github</a></button>
-                        <button><a href="https://drive.google.com/file/d/1oJmL_dQGwcQrzcswBHF43Rmo4of8NFT3/view"
-                                target="_blank" style="color: black;">demo</a></button>
-                    </div>
-                </div>
+        <div class="card-container" id="other-projects-container">
             </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project19.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Autogit</h3>
-                    <div class="card-tags">
-                        <p class="tag">#VS Code API</p>
-                        <p class="tag">#typescript</p>
-                    </div>
-                    <p>VSCode Extension to log the filename and the number of files changed to a seperate repository
-                        whenever there is a filechange in the workspace every 30 minutes</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/autogit" target="_blank"
-                                style="color: black;">github</a></button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project17.png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>we are checking...</h3>
-                    <div class="card-tags">
-                        <p class="tag">#react-native</p>
-                        <p class="tag">#typescript</p>
-                        <p class="tag">#navigation</p>
-                        <p class="tag">#X API</p>
-                    </div>
-                    <p>formula one stats app thats shows standings schedule and news.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/we-are-checking" target="_blank"
-                                style="color: black;">github</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project16.png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>ping ping score tracker</h3>
-                    <div class="card-tags">
-                        <p class="tag">#react-native</p>
-                        <p class="tag">#typescript</p>
-                    </div>
-                    <p>App to keep track of the score in a table tennis game. User can track whose serve it is and
-                        also available for duos.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/pingpong-score-tracker-rn" target="_blank"
-                                style="color: black;">github</a></button>
-                        <button><a href="https://marketplace.visualstudio.com/items?itemName=HrudayGurijala.autogit"
-                                target="_blank" style="color: black;">download</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project15.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>AI travel assistant</h3>
-                    <div class="card-tags">
-                        <p class="tag">#react.js</p>
-                        <p class="tag">#typescript</p>
-                        <p class="tag">#OpenAI API</p>
-                        <p class="tag">#node.js</p>
-                    </div>
-                    <p>AI chat bot fine-tuned to give travel recommendations and planning tours.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/travel-assistant" target="_blank"
-                                style="color: black;">github</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project12.jpeg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Track player app</h3>
-                    <div class="card-tags">
-                        <p class="tag">#react-native</p>
-                        <p class="tag">#typescript</p>
-                    </div>
-                    <p>App to play, pause etc. songs that are local(will upgrade this into a spotify clone)</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/track-player-rn" target="_blank"
-                                style="color: black;">github</a></button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project9.jpeg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Bus Reservation System</h3>
-                    <div class="card-tags">
-                        <p class="tag">#cpp</p>
-                        <p class="tag">#oops</p>
-                        <p class="tag">#cli</p>
-                        <p class="tag">#.dat files</p>
-                    </div>
-                    <p>Allows users to book and cancel bus tickets, while admins can manage buses and view bookings
-                    </p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/bus-booking-oops" target="_blank"
-                                style="color: black;">github</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project8.jpeg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>AR learning app</h3>
-                    <div class="card-tags">
-                        <p class="tag">#AR.js</p>
-                        <p class="tag">#a-frame</p>
-                        <p class="tag">#3D models</p>
-                        <p class="tag">#Augmented reality</p>
-                    </div>
-                    <p>Users can scan specific AR markers, which trigger a 3d object to hover and play animations.
-                    </p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/Code-It-main" target="_blank"
-                                style="color: black;">github</a></button>
-                        </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project7.jpeg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>AR music player</h3>
-                    <div class="card-tags">
-                        <p class="tag">#AR.js</p>
-                        <p class="tag">#a-frame</p>
-                        <p class="tag">#howler.js</p>
-                        <p class="tag">#Augmented reality</p>
-                    </div>
-                    <p>Users can interact with virtual instruments by scanning specific AR markers, which trigger
-                        audio.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/AR-musicplayer" target="_blank"
-                                style="color: black;">github</a></button>
-                        </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project14.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Password generator app</h3>
-                    <div class="card-tags">
-                        <p class="tag">#react-native</p>
-                        <p class="tag">#typescript</p>
-                    </div>
-                    <p>Password generator app that generates strong password with required toggles.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/password-generator" target="_blank"
-                                style="color: black;">github</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project13.jpeg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Ecommerce app</h3>
-                    <div class="card-tags">
-                        <p class="tag">#react-native</p>
-                        <p class="tag">#typescript</p>
-                        <p class="tag">#navigation</p>
-                    </div>
-                    <p>simple app with a home page with products and products page (learnt navigation)</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/ecommerce-rn" target="_blank"
-                                style="color: black;">github</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project11.webp" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Tic Tac Toe</h3>
-                    <div class="card-tags">
-                        <p class="tag">#react-native</p>
-                        <p class="tag">#typescript</p>
-                        <p class="tag">#data structures</p>
-                    </div>
-                    <p>Simple tic-tac-toe game using react-native(used snackbar and integrated vector icons)</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/tictactoe-app" target="_blank"
-                                style="color: black;">github</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project4.png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Weather app</h3>
-                    <div class="card-tags">
-                        <p class="tag">#node.js</p>
-                        <p class="tag">#express.js</p>
-                        <p class="tag">#ejs</p>
-                    </div>
-                    <p>A simple application to get current weather information for a given location.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/weather-app" target="_blank"
-                                style="color: black;">github</a></button>
-                        <button><a href="https://stackblitz.com/~/github.com/HrudayGurijala/weather-app" target="_blank"
-                                style="color: black;">live</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project3.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Smart irrigation system</h3>
-                    <div class="card-tags">
-                        <p class="tag">#Arduino</p>
-                        <p class="tag">#Embedded C</p>
-                        <p class="tag">#firebase</p>
-                        <p class="tag">#Blynk</p>
-                    </div>
-                    <p>Ensuring water delivery based on real-time soil moisture levels with app monitoring.</p>
-                    <div class="card-buttons">
-
-                        <button><a href="https://github.com/HrudayGurijala/smartirrigationsystem" target="_blank"
-                                style="color: black;">github</a></button>
-                        <button><a
-                                href="https://drive.google.com/file/d/1lU5XAWjKBt6y1lv9PERk65ghNoDy5dEM/view?usp=sharing"
-                                target="_blank" style="color: black;">demo</a></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project2.png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Book List app</h3>
-                    <div class="card-tags">
-                        <p class="tag">#react.js</p>
-                        <p class="tag">#rest api</p>
-                        <p class="tag">#node js</p>
-                        <p class="tag">#json server</p>
-                    </div>
-                    <p>simple book list application built with React.js. users can add, edit, and delete books.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/book-list-main" target="_blank"
-                                style="color: black;">github</a></button>
-                        <button><a href="https://stackblitz.com/~/github.com/HrudayGurijala/book-list-main"
-                                target="_blank" style="color: black;">live</a></button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="cards">
-                <div class="card-image">
-                    <img loading="lazy" src="/assets/project1.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Plant disease classification</h3>
-                    <div class="card-tags">
-                        <p class="tag">#CNN</p>
-                        <p class="tag">#random forest</p>
-                        <p class="tag">#resnet-50</p>
-                        <p class="tag">#ANN</p>
-                    </div>
-                    <p>Exploring efficacy of machine learning in plant disease classification.</p>
-                    <div class="card-buttons">
-                        <button><a href="https://github.com/HrudayGurijala/PlantDiseaseRecognition" target="_blank"
-                                style="color: black;">github</a></button>
-                        </div>
-                </div>
-            </div>
-
-
-        </div>
     </div>
 
     <div class="footer">
@@ -470,7 +73,204 @@
         &copy; 2024 Design and crafted by Hruday Gurijala
     </footer>
 
-    <script src="/assets/js/ambient-bg.js"></script>
+    <!-- <script src="/assets/js/ambient-bg.js"></script> -->
+        <script src="/assets/js/topo-map.js"></script>
+
+    <script>
+        const topProjects = [
+            {
+                image: "/assets/project10.png",
+                title: "Smart classroom",
+                tags: ["#raspberry pi", "#opencv", "#react", "#fastapi"],
+                description: "Detect people and get sensor values from raspberry pi and give insights on react application.",
+                github: "https://github.com/HrudayGurijala/smart_classroom",
+                demo: "https://drive.google.com/file/d/12-9apaXynG9jHmUM19z8SlYv6QAdIHi8/view?usp=sharing"
+            },
+            {
+                image: "/assets/project6.png",
+                title: "Code it",
+                tags: ["#node.js", "#express.js", "#NLP", "#selenium"],
+                description: "Search engine to search problems from different coding platforms like LeetCode, GFG, and InterviewBit etc.",
+                github: "https://github.com/HrudayGurijala/Code-It-main",
+                live: "https://code-it-main.onrender.com"
+            },
+            {
+                image: "/assets/project5.png",
+                title: "Learnflow",
+                tags: ["#node.js", "#express.js", "#mongodb", "#AWS"],
+                description: "Platform where users can create, share, and view video posts, comment on posts, and like.",
+                github: "https://github.com/HrudayGurijala/learnflow",
+                live: "https://learnflow-ibb1.onrender.com"
+            }
+        ];
+
+        const otherProjects = [
+            //new project
+            /*{
+                image: "/assets/project18.png",
+                title: "Research paper summarizer",
+                tags: ["#react-native", "#typescript"],
+                description: "A multi-agent system for finding, analyzing, and summarizing research papers from various sources, organizing them by topic, and generating audio podcasts discussing the findings.",
+                github: "https://github.com/HrudayGurijala/research-paper-summarization",
+                demo: "https://drive.google.com/file/d/1oJmL_dQGwcQrzcswBHF43Rmo4of8NFT3/view"
+            },*/
+            {
+                image: "/assets/project18.png",
+                title: "Research paper summarizer",
+                tags: ["#react-native", "#typescript"],
+                description: "A multi-agent system for finding, analyzing, and summarizing research papers from various sources, organizing them by topic, and generating audio podcasts discussing the findings.",
+                github: "https://github.com/HrudayGurijala/research-paper-summarization",
+                demo: "https://drive.google.com/file/d/1oJmL_dQGwcQrzcswBHF43Rmo4of8NFT3/view"
+            },
+            {
+                image: "/assets/project19.jpg",
+                title: "Autogit",
+                tags: ["#VS Code API", "#typescript"],
+                description: "VSCode Extension to log the filename and the number of files changed to a separate repository whenever there is a file change in the workspace every 30 minutes.",
+                github: "https://github.com/HrudayGurijala/autogit"
+            },
+            {
+                image: "/assets/project17.png",
+                title: "we are checking...",
+                tags: ["#react-native", "#typescript", "#navigation", "#X API"],
+                description: "Formula one stats app that shows standings, schedule, and news.",
+                github: "https://github.com/HrudayGurijala/we-are-checking"
+            },
+            {
+                image: "/assets/project16.png",
+                title: "ping ping score tracker",
+                tags: ["#react-native", "#typescript"],
+                description: "App to keep track of the score in a table tennis game. User can track whose serve it is and also available for duos.",
+                github: "https://github.com/HrudayGurijala/pingpong-score-tracker-rn",
+                download: "https://marketplace.visualstudio.com/items?itemName=HrudayGurijala.autogit" // Assuming download link for VSCode extension
+            },
+            {
+                image: "/assets/project15.jpg",
+                title: "AI travel assistant",
+                tags: ["#react.js", "#typescript", "#OpenAI API", "#node.js"],
+                description: "AI chat bot fine-tuned to give travel recommendations and planning tours.",
+                github: "https://github.com/HrudayGurijala/travel-assistant"
+            },
+            {
+                image: "/assets/project12.jpeg",
+                title: "Track player app",
+                tags: ["#react-native", "#typescript"],
+                description: "App to play, pause etc. songs that are local (will upgrade this into a Spotify clone).",
+                github: "https://github.com/HrudayGurijala/track-player-rn"
+            },
+            {
+                image: "/assets/project9.jpeg",
+                title: "Bus Reservation System",
+                tags: ["#cpp", "#oops", "#cli", "#.dat files"],
+                description: "Allows users to book and cancel bus tickets, while admins can manage buses and view bookings.",
+                github: "https://github.com/HrudayGurijala/bus-booking-oops"
+            },
+            {
+                image: "/assets/project8.jpeg",
+                title: "AR learning app",
+                tags: ["#AR.js", "#a-frame", "#3D models", "#Augmented reality"],
+                description: "Users can scan specific AR markers, which trigger a 3D object to hover and play animations.",
+                github: "https://github.com/HrudayGurijala/Code-It-main" // This link seems incorrect, it points to "Code It" project
+            },
+            {
+                image: "/assets/project7.jpeg",
+                title: "AR music player",
+                tags: ["#AR.js", "#a-frame", "#howler.js", "#Augmented reality"],
+                description: "Users can interact with virtual instruments by scanning specific AR markers, which trigger audio.",
+                github: "https://github.com/HrudayGurijala/AR-musicplayer"
+            },
+            {
+                image: "/assets/project14.jpg",
+                title: "Password generator app",
+                tags: ["#react-native", "#typescript"],
+                description: "Password generator app that generates strong passwords with required toggles.",
+                github: "https://github.com/HrudayGurijala/password-generator"
+            },
+            {
+                image: "/assets/project13.jpeg",
+                title: "Ecommerce app",
+                tags: ["#react-native", "#typescript", "#navigation"],
+                description: "Simple app with a home page with products and products page (learnt navigation).",
+                github: "https://github.com/HrudayGurijala/ecommerce-rn"
+            },
+            {
+                image: "/assets/project11.webp",
+                title: "Tic Tac Toe",
+                tags: ["#react-native", "#typescript", "#data structures"],
+                description: "Simple tic-tac-toe game using react-native (used snackbar and integrated vector icons).",
+                github: "https://github.com/HrudayGurijala/tictactoe-app"
+            },
+            {
+                image: "/assets/project4.png",
+                title: "Weather app",
+                tags: ["#node.js", "#express.js", "#ejs"],
+                description: "A simple application to get current weather information for a given location.",
+                github: "https://github.com/HrudayGurijala/weather-app",
+                live: "https://stackblitz.com/~/github.com/HrudayGurijala/weather-app"
+            },
+            {
+                image: "/assets/project3.jpg",
+                title: "Smart irrigation system",
+                tags: ["#Arduino", "#Embedded C", "#firebase", "#Blynk"],
+                description: "Ensuring water delivery based on real-time soil moisture levels with app monitoring.",
+                github: "https://github.com/HrudayGurijala/smartirrigationsystem",
+                demo: "https://drive.google.com/file/d/1lU5XAWjKBt6y1lv9PERk65ghNoDy5dEM/view?usp=sharing"
+            },
+            {
+                image: "/assets/project2.png",
+                title: "Book List app",
+                tags: ["#react.js", "#rest api", "#node js", "#json server"],
+                description: "Simple book list application built with React.js. Users can add, edit, and delete books.",
+                github: "https://github.com/HrudayGurijala/book-list-main",
+                live: "https://stackblitz.com/~/github.com/HrudayGurijala/book-list-main"
+            },
+            {
+                image: "/assets/project1.jpg",
+                title: "Plant disease classification",
+                tags: ["#CNN", "#random forest", "#resnet-50", "#ANN"],
+                description: "Exploring efficacy of machine learning in plant disease classification.",
+                github: "https://github.com/HrudayGurijala/PlantDiseaseRecognition"
+            }
+        ];
+
+        function createProjectCard(project) {
+            const card = document.createElement('div');
+            card.classList.add('cards');
+
+            card.innerHTML = `
+                <div class="card-image">
+                    <img loading="lazy" src="${project.image}" alt="${project.title} Project">
+                </div>
+                <div class="card-content">
+                    <h3>${project.title}</h3>
+                    <div class="card-tags">
+                        ${project.tags.map(tag => `<p class="tag">${tag}</p>`).join('')}
+                    </div>
+                    <p>${project.description}</p>
+                    <div class="card-buttons">
+                        ${project.github ? `<button><a href="${project.github}" target="_blank" style="color: black;">github</a></button>` : ''}
+                        ${project.live ? `<button><a href="${project.live}" target="_blank" style="color: black;">live</a></button>` : ''}
+                        ${project.demo ? `<button><a href="${project.demo}" target="_blank" style="color: black;">demo</a></button>` : ''}
+                        ${project.download ? `<button><a href="${project.download}" target="_blank" style="color: black;">download</a></button>` : ''}
+                    </div>
+                </div>
+            `;
+            return card;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const topProjectsContainer = document.getElementById('top-projects-container');
+            const otherProjectsContainer = document.getElementById('other-projects-container');
+
+            topProjects.forEach(project => {
+                topProjectsContainer.appendChild(createProjectCard(project));
+            });
+
+            otherProjects.forEach(project => {
+                otherProjectsContainer.appendChild(createProjectCard(project));
+            });
+        });
+    </script>
 </body>
 
 </html>
