@@ -3,15 +3,23 @@ class TopoMap {
     constructor(canvasId, options = {}) {
         // Configuration options with defaults
         this.config = {
+            // Controls whether to show FPS counter in top-right corner
             showFPS: options.showFPS || false,
+            // Limits maximum frames per second (0 = unlimited)
             maxFPS: options.maxFPS || 0,
-            thresholdIncrement: options.thresholdIncrement || 10,
-            thickLineThresholdMultiple: options.thickLineThresholdMultiple || 2,
-            res: options.res || 8,
-            // baseZOffset: options.baseZOffset || ,
-            baseZOffset: options.baseZOffset || 0.0003,
-            lineColor: options.lineColor || '#ffea00',
-            backgroundColor: options.backgroundColor || '#000000',
+            // Distance between contour lines (smaller = more dense lines)
+            thresholdIncrement: options.thresholdIncrement || 8,
+            // How often to draw thicker lines (1 = every line, 2 = every other line, etc)
+            thickLineThresholdMultiple: options.thickLineThresholdMultiple || 3,
+            // Resolution/size of grid cells (smaller = more detailed but slower)
+            res: options.res || 7,
+            // Speed of noise animation/movement (larger = faster movement)
+            baseZOffset: options.baseZOffset || 0.00008,
+            // Color of the contour lines
+            lineColor: options.lineColor || 'rgba(255, 234, 0, 0.9)',
+            // Background color of the canvas
+            backgroundColor: options.backgroundColor || '#121212',
+            // Whether to enable mouse interaction with the map
             enableMouseInteraction: options.enableMouseInteraction !== false,
             ...options
         };
@@ -193,7 +201,7 @@ class TopoMap {
     renderAtThreshold() {
         this.ctx.beginPath();
         this.ctx.strokeStyle = this.config.lineColor;
-        this.ctx.lineWidth = this.currentThreshold % (this.config.thresholdIncrement * this.config.thickLineThresholdMultiple) === 0 ? 2 : 1;
+        this.ctx.lineWidth = this.currentThreshold % (this.config.thresholdIncrement * this.config.thickLineThresholdMultiple) === 0 ? 0.3 : 0.3;
         
         for (let y = 0; y < this.inputValues.length - 1; y++) {
             for (let x = 0; x < this.inputValues[y].length - 1; x++) {

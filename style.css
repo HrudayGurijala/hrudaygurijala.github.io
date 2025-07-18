@@ -19,7 +19,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #000000;
+    background-color: #121212;
     position: relative;
     scrollbar-width: thin;
     scrollbar-color: #888 #f1f1f1;
